@@ -516,4 +516,24 @@ public class HadoopClusterService implements IHadoopClusterService {
         return updated;
     }
 
+    @Override
+    public boolean hideSensitiveValues(Item item) {
+        if(!(item instanceof HadoopClusterConnectionItem)) {
+            return false;
+        }
+        HadoopClusterConnection hadoopConn = (HadoopClusterConnection) ((HadoopClusterConnectionItem)item).getConnection();
+        hadoopConn.setClouderaNaviClientUrl("");
+        hadoopConn.setClouderaNaviMetadataUrl("");
+        hadoopConn.setClouderaNaviPassword("");
+        hadoopConn.setClouderaNaviUrl("");
+        hadoopConn.setClouderaNaviUserName("");
+        hadoopConn.setComment("");
+        hadoopConn.setJobTrackerURI("");
+        hadoopConn.setJtOrRmPrincipal("");
+        hadoopConn.setMaprTPassword("");
+        hadoopConn.setNameNodeURI("");
+        hadoopConn.setServer("");
+        return true;
+    }
+
 }

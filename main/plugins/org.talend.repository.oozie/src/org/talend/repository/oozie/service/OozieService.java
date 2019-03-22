@@ -10,6 +10,7 @@ import org.apache.commons.lang.StringUtils;
 import org.talend.core.hadoop.IOozieService;
 import org.talend.core.hadoop.version.custom.ECustomVersionGroup;
 import org.talend.core.model.metadata.builder.connection.Connection;
+import org.talend.core.model.properties.Item;
 import org.talend.core.prefs.ITalendCorePrefConstants;
 import org.talend.repository.hadoopcluster.util.HCRepositoryUtil;
 import org.talend.repository.model.IRepositoryNode.ENodeType;
@@ -17,6 +18,7 @@ import org.talend.repository.model.IRepositoryNode.EProperties;
 import org.talend.repository.model.RepositoryNode;
 import org.talend.repository.model.hadoopcluster.HadoopClusterConnection;
 import org.talend.repository.model.oozie.OozieConnection;
+import org.talend.repository.model.oozie.OozieConnectionItem;
 import org.talend.repository.oozie.node.model.OozieRepositoryNodeType;
 import org.talend.utils.json.JSONArray;
 import org.talend.utils.json.JSONException;
@@ -93,6 +95,18 @@ public class OozieService implements IOozieService {
             e.printStackTrace();
         }
         return properties;
+    }
+
+    @Override
+    public boolean hideOozieValues(Item item) {
+        if(!(item instanceof OozieConnectionItem)) {
+            return false;
+        }
+        OozieConnection oozieConn = (OozieConnection) ((OozieConnectionItem)item).getConnection();
+        oozieConn.setComment("");
+        oozieConn.setOozieEndPoind("");
+        oozieConn.setUserName("");
+        return true;
     }
 
 }
