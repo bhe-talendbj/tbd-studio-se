@@ -40,23 +40,9 @@
   <plugin id="org.talend.hadoop.distribution.hdinsight320" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
   <plugin id="org.talend.hadoop.distribution.hdinsight340" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
   <plugin id="org.talend.hadoop.distribution.hdinsight360" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-  <plugin id="org.talend.hadoop.distribution.hdp120" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-  <plugin id="org.talend.hadoop.distribution.hdp130" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-  <plugin id="org.talend.hadoop.distribution.hdp200" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-  <plugin id="org.talend.hadoop.distribution.hdp210" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-  <plugin id="org.talend.hadoop.distribution.hdp220" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-  <plugin id="org.talend.hadoop.distribution.hdp230" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-  <plugin id="org.talend.hadoop.distribution.hdp240" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
   <plugin id="org.talend.hadoop.distribution.hdp250" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
   <plugin id="org.talend.hadoop.distribution.hdp260" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
   <plugin id="org.talend.hadoop.distribution.hdpx" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-  <plugin id="org.talend.hadoop.distribution.mapr200" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-  <plugin id="org.talend.hadoop.distribution.mapr212" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-  <plugin id="org.talend.hadoop.distribution.mapr213" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-  <plugin id="org.talend.hadoop.distribution.mapr301" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-  <plugin id="org.talend.hadoop.distribution.mapr310" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-  <plugin id="org.talend.hadoop.distribution.mapr401" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-  <plugin id="org.talend.hadoop.distribution.mapr410" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
   <plugin id="org.talend.hadoop.distribution.mapr500" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
   <plugin id="org.talend.hadoop.distribution.mapr510" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
   <plugin id="org.talend.hadoop.distribution.mapr520" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
