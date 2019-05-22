@@ -191,7 +191,15 @@
             "jarName": "elephant-bird-rcfile-4.9-patched-hive-1.x.jar",
             "mvnUri": "mvn:org.talend.libraries/elephant-bird-rcfile-4.9-patched-hive-1.x/6.0.0",
             "useStudioRepository": "true"
-        },
+		},
+		{
+			"id": "graphframes",
+			"type": "STANDARD",
+			"context": "{properties.context}",
+			"jarName": "graphframes-0.7.0-spark2.4-s_2.11.jar",
+			"mvnUri": "mvn:graphframes/graphframes/0.7.0-spark2.4-s_2.11",
+			"description": ""
+		},
 		{
 			"id": "hadoop-azure",
 			"type": "BASE",
@@ -313,6 +321,13 @@
 			"exclusions": [
 				{
 					"groupId": "io.netty",
+					"artifactId": "*",
+					"classifier": "",
+					"extension": "",
+					"description": ""
+				},
+				{
+					"groupId": "jdk.tools",
 					"artifactId": "*",
 					"classifier": "",
 					"extension": "",
@@ -597,13 +612,6 @@
                     "classifier": "",
                     "extension": "",
                     "description": ""
-                },
-                {
-                    "groupId": "jdk.tools",
-                    "artifactId": "*",
-                    "classifier": "",
-                    "extension": "",
-                    "description": ""
                 }
 			]
 		},
@@ -820,6 +828,13 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
+				},
+				{
+					"groupId": "jdk.tools",
+					"artifactId": "*",
+					"classifier": "",
+					"extension": "",
+					"description": ""
 				}
 			]
 		},
@@ -881,7 +896,7 @@
 			"id": "parquet-pig",
 			"type": "BASE",
 			"context": "{properties.context}",
-			"groupId": "com.twitter",
+			"groupId": "org.apache.parquet",
 			"artifactId": "parquet-pig",
 			"classifier": "",
 			"description": ""
@@ -890,7 +905,7 @@
 			"id": "parquet-avro",
 			"type": "BASE",
 			"context": "{properties.context}",
-			"groupId": "com.twitter",
+			"groupId": "org.apache.parquet",
 			"artifactId": "parquet-avro",
 			"classifier": "",
 			"description": "",
@@ -908,7 +923,7 @@
 			"id": "parquet-hadoop-bundle",
 			"type": "BASE",
 			"context": "{properties.context}",
-			"groupId": "com.twitter",
+			"groupId": "org.apache.parquet",
 			"artifactId": "parquet-hadoop-bundle",
 			"classifier": "",
 			"description": ""
@@ -917,7 +932,7 @@
 			"id": "parquet-pig-bundle",
 			"type": "BASE",
 			"context": "{properties.context}",
-			"groupId": "com.twitter",
+			"groupId": "org.apache.parquet",
 			"artifactId": "parquet-pig-bundle",
 			"classifier": "",
 			"description": ""
@@ -970,6 +985,13 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
+				},
+				{
+					"groupId": "jdk.tools",
+					"artifactId": "*",
+					"classifier": "",
+					"extension": "",
+					"description": ""
 				}
 			]
 		},
@@ -996,6 +1018,13 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
+				},
+				{
+					"groupId": "jdk.tools",
+					"artifactId": "*",
+					"classifier": "",
+					"extension": "",
+					"description": ""
 				}
 			]
 		},
@@ -1018,6 +1047,13 @@
 				},
 				{
 					"groupId": "xerces",
+					"artifactId": "*",
+					"classifier": "",
+					"extension": "",
+					"description": ""
+				},
+				{
+					"groupId": "jdk.tools",
 					"artifactId": "*",
 					"classifier": "",
 					"extension": "",
@@ -1169,6 +1205,18 @@
 				"jackson-annotations"
 			]
 		},
+		{
+			"id": "HDFS-SPARK1_6-LIB-DYNAMIC",
+			"description": "",
+			"modules": [
+			]
+		},
+		{
+			"id": "HDFS-SPARK2_1-LIB-DYNAMIC",
+			"description": "",
+			"modules": [
+			]
+		},
         {
 			"id": "IMPALA-LIB-DYNAMIC",
 			"description": "",
@@ -1276,6 +1324,12 @@
 			]
 		},
 		{
+			"id": "SPARK-PARQUET-LIB-MRREQUIRED-DYNAMIC",
+			"description": "",
+			"modules": [
+			]
+		},
+		{
 			"id": "SPARK-LIB-SPARK2-DYNAMIC",
 			"description": "",
 			"modules": [
@@ -1311,6 +1365,20 @@
         },
         {
 			"id": "PIG-S3-LIB-DYNAMIC",
+			"description": "",
+			"modules": [
+				"hadoop-client"
+			]
+		},
+		{
+			"id": "SPARK-GRAPHFRAMES-LIB-MRREQUIRED-DYNAMIC",
+			"description": "",
+			"modules": [
+				"graphframes"
+			]
+		},
+		{
+			"id": "SPARK-HIVE-LIB-MRREQUIRED-DYNAMIC",
 			"description": "",
 			"modules": [
 				"hadoop-client"
