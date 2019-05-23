@@ -95,6 +95,7 @@
 			"groupId": "com.linkedin.datafu",
 			"artifactId": "datafu",
 			"classifier": "",
+			"version":"1.1.0-cdh5.16.1",
 			"description": "",
 			"exclusions": [
 				{
@@ -509,7 +510,14 @@
                     "classifier": "",
                     "extension": "",
                     "description": ""
-                }
+                },
+				{
+					"groupId": "org.cloudera.logredactor",
+					"artifactId": "*",
+					"classifier": "",
+					"extension": "",
+					"description": ""
+				}
 			]
 		},
 		{
@@ -548,7 +556,14 @@
                     "classifier": "",
                     "extension": "",
                     "description": ""
-                }
+                },
+				{
+					"groupId": "org.cloudera.logredactor",
+					"artifactId": "*",
+					"classifier": "",
+					"extension": "",
+					"description": ""
+				}
 			]
 		},
 		{
@@ -665,7 +680,14 @@
                     "classifier": "",
                     "extension": "",
                     "description": ""
-                }
+                },
+				{
+					"groupId": "org.cloudera.logredactor",
+					"artifactId": "*",
+					"classifier": "",
+					"extension": "",
+					"description": ""
+				}
 			]
 		},
 		{
@@ -711,7 +733,14 @@
                     "classifier": "",
                     "extension": "",
                     "description": ""
-                }
+                },
+				{
+					"groupId": "org.cloudera.logredactor",
+					"artifactId": "*",
+					"classifier": "",
+					"extension": "",
+					"description": ""
+				}
 			]
 		},
 		{
@@ -764,7 +793,14 @@
                     "classifier": "",
                     "extension": "",
                     "description": ""
-                }
+                },
+				{
+					"groupId": "org.cloudera.logredactor",
+					"artifactId": "*",
+					"classifier": "",
+					"extension": "",
+					"description": ""
+				}
 			]
 		},
 		{
@@ -992,6 +1028,21 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
+				},
+				{
+					"groupId": "org.cloudera.logredactor",
+					"artifactId": "*",
+					"classifier": "",
+					"extension": "",
+					"description": ""
+				},
+				{
+					"groupId": "com.twitter",
+					"artifactId": "*",
+					"classifier": "",
+					"version": "1.5.0-cdh5.13.3",
+					"extension": "",
+					"description": ""
 				}
 			]
 		},
@@ -1023,6 +1074,15 @@
 					"groupId": "jdk.tools",
 					"artifactId": "*",
 					"classifier": "",
+					"extension": "",
+					"description": ""
+				}
+				,
+				{
+					"groupId": "com.twitter",
+					"artifactId": "*",
+					"classifier": "",
+					"version": "1.5.0-cdh5.13.3",
 					"extension": "",
 					"description": ""
 				}
@@ -1093,6 +1153,13 @@
 				},
 				{
 					"groupId": "xerces",
+					"artifactId": "*",
+					"classifier": "",
+					"extension": "",
+					"description": ""
+				},
+				{
+					"groupId": "org.cloudera.logredactor",
 					"artifactId": "*",
 					"classifier": "",
 					"extension": "",
