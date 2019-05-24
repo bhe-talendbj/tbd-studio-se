@@ -27,7 +27,7 @@
                 "SPARK_2_4"
             ],
             "description": ""
-        },
+		},
         {
 			"id": "avro-mapred",
 			"type": "BASE",
