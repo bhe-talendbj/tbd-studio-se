@@ -1053,14 +1053,6 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
-				},
-				{
-					"groupId": "com.twitter",
-					"artifactId": "*",
-					"classifier": "",
-					"version": "1.5.0-cdh5.13.3",
-					"extension": "",
-					"description": ""
 				}
 			]
 		},
