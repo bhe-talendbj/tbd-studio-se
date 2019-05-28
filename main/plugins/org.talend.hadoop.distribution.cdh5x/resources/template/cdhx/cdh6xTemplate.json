@@ -397,7 +397,7 @@
                     "classifier": "",
                     "extension": "",
                     "description": ""
-                }
+				}
 			]
 		},
 		{
@@ -1055,12 +1055,12 @@
 					"description": ""
 				},
 				{
-					"groupId": "com.twitter",
-					"artifactId": "*",
-					"classifier": "",
-					"version": "1.5.0-cdh5.13.3",
+                    "groupId": "org.apache.hive",
+                    "artifactId": "*",
+                    "classifier": "",
 					"extension": "",
-					"description": ""
+					"version": "1.1.0-cdh5.13.3",
+                    "description": ""
 				}
 			]
 		},
@@ -1092,15 +1092,6 @@
 					"groupId": "jdk.tools",
 					"artifactId": "*",
 					"classifier": "",
-					"extension": "",
-					"description": ""
-				}
-				,
-				{
-					"groupId": "com.twitter",
-					"artifactId": "*",
-					"classifier": "",
-					"version": "1.5.0-cdh5.13.3",
 					"extension": "",
 					"description": ""
 				}
