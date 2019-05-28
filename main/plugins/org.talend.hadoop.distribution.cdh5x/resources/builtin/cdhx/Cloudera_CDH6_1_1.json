@@ -5,6 +5,7 @@
     "id" : "Cloudera_CDH6_1_1",
     "name" : "Cloudera CDH6.1.1",
     "repository" : "https://talend-update.talend.com/nexus/content/groups/dynamicdistribution/",
+    "selectedSparkVersions" : [ "SPARK_2_4" ],
     "tagName" : "dynamicPluginConfiguration",
     "templateId" : "CDH6xDistributionTemplate",
     "version" : "6.1.1"
@@ -437,6 +438,10 @@
       }, {
         "childNodes" : [ ],
         "id" : "DYNAMIC_Cloudera_CDH6_1_1_xz_1_6_jar",
+        "tagName" : "library"
+      }, {
+        "childNodes" : [ ],
+        "id" : "DYNAMIC_Cloudera_CDH6_1_1_zookeeper_3_4_5_cdh6_1_1_jar",
         "tagName" : "library"
       } ],
       "description" : "",
@@ -4157,7 +4162,7 @@
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_taglibs_standard_spec_1_2_5_jar",
+        "id" : "DYNAMIC_Cloudera_CDH6_1_1_snappy_0_2_jar",
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
@@ -4165,11 +4170,11 @@
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_transaction_api_1_1_jar",
+        "id" : "DYNAMIC_Cloudera_CDH6_1_1_stax2_api_3_1_4_jar",
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_twill_api_0_6_0_incubating_jar",
+        "id" : "DYNAMIC_Cloudera_CDH6_1_1_stax_api_1_0_1_jar",
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
@@ -4177,15 +4182,15 @@
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_twill_discovery_api_0_6_0_incubating_jar",
+        "id" : "DYNAMIC_Cloudera_CDH6_1_1_taglibs_standard_spec_1_2_5_jar",
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_twill_discovery_core_0_6_0_incubating_jar",
+        "id" : "DYNAMIC_Cloudera_CDH6_1_1_tephra_api_0_6_0_jar",
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_twill_zookeeper_0_6_0_incubating_jar",
+        "id" : "DYNAMIC_Cloudera_CDH6_1_1_tephra_core_0_6_0_jar",
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
@@ -5357,6 +5362,10 @@
         "childNodes" : [ ],
         "id" : "DYNAMIC_Cloudera_CDH6_1_1_xz_1_6_jar",
         "tagName" : "library"
+      }, {
+        "childNodes" : [ ],
+        "id" : "DYNAMIC_Cloudera_CDH6_1_1_zookeeper_3_4_5_cdh6_1_1_jar",
+        "tagName" : "library"
       } ],
       "description" : "",
       "id" : "DYNAMIC_Cloudera_CDH6_1_1_PIG_AVRO_LIB_DYNAMIC",
@@ -5918,6 +5927,10 @@
       }, {
         "childNodes" : [ ],
         "id" : "DYNAMIC_Cloudera_CDH6_1_1_xz_1_6_jar",
+        "tagName" : "library"
+      }, {
+        "childNodes" : [ ],
+        "id" : "DYNAMIC_Cloudera_CDH6_1_1_zookeeper_3_4_5_cdh6_1_1_jar",
         "tagName" : "library"
       } ],
       "description" : "",
@@ -9609,10 +9622,6 @@
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_apache_log4j_extras_1_2_17_jar",
-        "tagName" : "library"
-      }, {
-        "childNodes" : [ ],
         "id" : "DYNAMIC_Cloudera_CDH6_1_1_arpack_combined_all_0_1_jar",
         "tagName" : "library"
       }, {
@@ -9650,10 +9659,6 @@
       }, {
         "childNodes" : [ ],
         "id" : "DYNAMIC_Cloudera_CDH6_1_1_avro_mapred_1_8_2_cdh6_1_1_hadoop2_jar",
-        "tagName" : "library"
-      }, {
-        "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_bonecp_0_8_0_RELEASE_jar",
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
@@ -9801,7 +9806,7 @@
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_guice_servlet_4_0_jar",
+        "id" : "DYNAMIC_Cloudera_CDH6_1_1_guava_14_0_1_jar",
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
@@ -9821,7 +9826,7 @@
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_hadoop_yarn_api_3_0_0_cdh6_1_1_jar",
+        "id" : "DYNAMIC_Cloudera_CDH6_1_1_hadoop_hdfs_client_3_0_0_cdh6_1_1_jar",
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
@@ -9846,30 +9851,6 @@
       }, {
         "childNodes" : [ ],
         "id" : "DYNAMIC_Cloudera_CDH6_1_1_hadoop_yarn_server_web_proxy_3_0_0_cdh6_1_1_jar",
-        "tagName" : "library"
-      }, {
-        "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_hive_metastore_2_1_1_cdh6_1_1_jar",
-        "tagName" : "library"
-      }, {
-        "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_hive_serde_2_1_1_cdh6_1_1_jar",
-        "tagName" : "library"
-      }, {
-        "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_hive_shims_0_23_2_1_1_cdh6_1_1_jar",
-        "tagName" : "library"
-      }, {
-        "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_hive_shims_2_1_1_cdh6_1_1_jar",
-        "tagName" : "library"
-      }, {
-        "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_hive_shims_common_2_1_1_cdh6_1_1_jar",
-        "tagName" : "library"
-      }, {
-        "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_hive_shims_scheduler_2_1_1_cdh6_1_1_jar",
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
@@ -9997,10 +9978,6 @@
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_jdo_api_3_0_1_jar",
-        "tagName" : "library"
-      }, {
-        "childNodes" : [ ],
         "id" : "DYNAMIC_Cloudera_CDH6_1_1_jersey_client_1_19_jar",
         "tagName" : "library"
       }, {
@@ -10110,10 +10087,6 @@
       }, {
         "childNodes" : [ ],
         "id" : "DYNAMIC_Cloudera_CDH6_1_1_jsr311_api_1_1_1_jar",
-        "tagName" : "library"
-      }, {
-        "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_jta_1_1_jar",
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
@@ -10313,10 +10286,6 @@
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_parquet_hadoop_bundle_1_5_0_cdh5_13_3_jar",
-        "tagName" : "library"
-      }, {
-        "childNodes" : [ ],
         "id" : "DYNAMIC_Cloudera_CDH6_1_1_parquet_jackson_1_5_0_cdh5_13_3_jar",
         "tagName" : "library"
       }, {
@@ -10477,11 +10446,11 @@
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_zstd_jni_1_3_2_2_jar",
+        "id" : "DYNAMIC_Cloudera_CDH6_1_1_xz_1_6_jar",
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_zstd_jni_1_3_2_2_jar",
+        "id" : "DYNAMIC_Cloudera_CDH6_1_1_zookeeper_3_4_5_cdh6_1_1_jar",
         "tagName" : "library"
       }, {
         "childNodes" : [ ],
@@ -10493,15 +10462,7 @@
       "tagName" : "libraryNeededGroup",
       "templateId" : "SPARK-LIB-SPARK2-DYNAMIC"
     }, {
-      "childNodes" : [ {
-        "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_parquet_hadoop_bundle_1_9_0_cdh6_1_1_jar",
-        "tagName" : "library"
-      }, {
-        "childNodes" : [ ],
-        "id" : "DYNAMIC_Cloudera_CDH6_1_1_re2j_1_1_jar",
-        "tagName" : "library"
-      } ],
+      "childNodes" : [ ],
       "description" : "",
       "id" : "DYNAMIC_Cloudera_CDH6_1_1_SPARK_PARQUET_LIB_MRREQUIRED_DYNAMIC",
       "tagName" : "libraryNeededGroup",
@@ -11259,6 +11220,10 @@
         "childNodes" : [ ],
         "id" : "DYNAMIC_Cloudera_CDH6_1_1_xz_1_6_jar",
         "tagName" : "library"
+      }, {
+        "childNodes" : [ ],
+        "id" : "DYNAMIC_Cloudera_CDH6_1_1_zookeeper_3_4_5_cdh6_1_1_jar",
+        "tagName" : "library"
       } ],
       "description" : "",
       "id" : "DYNAMIC_Cloudera_CDH6_1_1_TALEND_CLOUDERA_NAVIGATOR_DYNAMIC",
@@ -11391,14 +11356,6 @@
       "id" : "DYNAMIC_Cloudera_CDH6_1_1_apache_jstl_9_3_20_v20170531_jar",
       "mvn_uri" : "mvn:org.eclipse.jetty/apache-jstl/9.3.20.v20170531/jar",
       "name" : "apache-jstl-9.3.20.v20170531.jar",
-      "tagName" : "libraryNeeded"
-    }, {
-      "childNodes" : [ ],
-      "context" : "plugin:org.talend.hadoop.distribution.cdh5x",
-      "excludeDependencies" : "true",
-      "id" : "DYNAMIC_Cloudera_CDH6_1_1_apache_log4j_extras_1_2_17_jar",
-      "mvn_uri" : "mvn:log4j/apache-log4j-extras/1.2.17/jar",
-      "name" : "apache-log4j-extras-1.2.17.jar",
       "tagName" : "libraryNeeded"
     }, {
       "childNodes" : [ ],
@@ -12015,7 +11972,7 @@
       "context" : "plugin:org.talend.hadoop.distribution.cdh5x",
       "excludeDependencies" : "true",
       "id" : "DYNAMIC_Cloudera_CDH6_1_1_elephant_bird_core_4_9_jar",
-      "mvn_uri" : "mvn:com.twitter.elephantbird/elephant-bird-core/4.9/jar",
+      "mvn_uri" : "mvn:com.twitter.elephantbird/elephant-bird-core/4.9",
       "name" : "elephant-bird-core-4.9.jar",
       "tagName" : "libraryNeeded"
     }, {
@@ -12248,7 +12205,7 @@
       "context" : "plugin:org.talend.hadoop.distribution.cdh5x",
       "excludeDependencies" : "true",
       "id" : "DYNAMIC_Cloudera_CDH6_1_1_hadoop_mapreduce_client_core_3_0_0_cdh6_1_1_jar",
-      "mvn_uri" : "mvn:org.apache.hadoop/hadoop-mapreduce-client-core/3.0.0-cdh6.1.1/jar",
+      "mvn_uri" : "mvn:org.apache.hadoop/hadoop-mapreduce-client-core/3.0.0-cdh6.1.1",
       "name" : "hadoop-mapreduce-client-core-3.0.0-cdh6.1.1.jar",
       "tagName" : "libraryNeeded"
     }, {
@@ -12360,7 +12317,7 @@
       "context" : "plugin:org.talend.hadoop.distribution.cdh5x",
       "excludeDependencies" : "true",
       "id" : "DYNAMIC_Cloudera_CDH6_1_1_hbase_client_2_1_0_cdh6_1_1_jar",
-      "mvn_uri" : "mvn:org.apache.hbase/hbase-client/2.1.0-cdh6.1.1/jar",
+      "mvn_uri" : "mvn:org.apache.hbase/hbase-client/2.1.0-cdh6.1.1",
       "name" : "hbase-client-2.1.0-cdh6.1.1.jar",
       "tagName" : "libraryNeeded"
     }, {
@@ -12560,7 +12517,7 @@
       "context" : "plugin:org.talend.hadoop.distribution.cdh5x",
       "excludeDependencies" : "true",
       "id" : "DYNAMIC_Cloudera_CDH6_1_1_hive_hcatalog_core_2_1_1_cdh6_1_1_jar",
-      "mvn_uri" : "mvn:org.apache.hive.hcatalog/hive-hcatalog-core/2.1.1-cdh6.1.1/jar",
+      "mvn_uri" : "mvn:org.apache.hive.hcatalog/hive-hcatalog-core/2.1.1-cdh6.1.1",
       "name" : "hive-hcatalog-core-2.1.1-cdh6.1.1.jar",
       "tagName" : "libraryNeeded"
     }, {
@@ -13465,38 +13422,6 @@
       "childNodes" : [ ],
       "context" : "plugin:org.talend.hadoop.distribution.cdh5x",
       "excludeDependencies" : "true",
-      "id" : "DYNAMIC_Cloudera_CDH6_1_1_json4s_ast_2_11_3_5_3_jar",
-      "mvn_uri" : "mvn:org.json4s/json4s-ast_2.11/3.5.3/jar",
-      "name" : "json4s-ast_2.11-3.5.3.jar",
-      "tagName" : "libraryNeeded"
-    }, {
-      "childNodes" : [ ],
-      "context" : "plugin:org.talend.hadoop.distribution.cdh5x",
-      "excludeDependencies" : "true",
-      "id" : "DYNAMIC_Cloudera_CDH6_1_1_json4s_core_2_11_3_5_3_jar",
-      "mvn_uri" : "mvn:org.json4s/json4s-core_2.11/3.5.3/jar",
-      "name" : "json4s-core_2.11-3.5.3.jar",
-      "tagName" : "libraryNeeded"
-    }, {
-      "childNodes" : [ ],
-      "context" : "plugin:org.talend.hadoop.distribution.cdh5x",
-      "excludeDependencies" : "true",
-      "id" : "DYNAMIC_Cloudera_CDH6_1_1_json4s_jackson_2_11_3_5_3_jar",
-      "mvn_uri" : "mvn:org.json4s/json4s-jackson_2.11/3.5.3/jar",
-      "name" : "json4s-jackson_2.11-3.5.3.jar",
-      "tagName" : "libraryNeeded"
-    }, {
-      "childNodes" : [ ],
-      "context" : "plugin:org.talend.hadoop.distribution.cdh5x",
-      "excludeDependencies" : "true",
-      "id" : "DYNAMIC_Cloudera_CDH6_1_1_json4s_scalap_2_11_3_5_3_jar",
-      "mvn_uri" : "mvn:org.json4s/json4s-scalap_2.11/3.5.3/jar",
-      "name" : "json4s-scalap_2.11-3.5.3.jar",
-      "tagName" : "libraryNeeded"
-    }, {
-      "childNodes" : [ ],
-      "context" : "plugin:org.talend.hadoop.distribution.cdh5x",
-      "excludeDependencies" : "true",
       "id" : "DYNAMIC_Cloudera_CDH6_1_1_json_20090211_jar",
       "mvn_uri" : "mvn:org.json/json/20090211/jar",
       "name" : "json-20090211.jar",
@@ -14129,14 +14054,6 @@
       "childNodes" : [ ],
       "context" : "plugin:org.talend.hadoop.distribution.cdh5x",
       "excludeDependencies" : "true",
-      "id" : "DYNAMIC_Cloudera_CDH6_1_1_parquet_hadoop_bundle_1_5_0_cdh5_13_3_jar",
-      "mvn_uri" : "mvn:com.twitter/parquet-hadoop-bundle/1.5.0-cdh5.13.3/jar",
-      "name" : "parquet-hadoop-bundle-1.5.0-cdh5.13.3.jar",
-      "tagName" : "libraryNeeded"
-    }, {
-      "childNodes" : [ ],
-      "context" : "plugin:org.talend.hadoop.distribution.cdh5x",
-      "excludeDependencies" : "true",
       "id" : "DYNAMIC_Cloudera_CDH6_1_1_parquet_hadoop_bundle_1_9_0_cdh6_1_1_jar",
       "mvn_uri" : "mvn:org.apache.parquet/parquet-hadoop-bundle/1.9.0-cdh6.1.1",
       "name" : "parquet-hadoop-bundle-1.9.0-cdh6.1.1.jar",
@@ -14170,7 +14087,7 @@
       "context" : "plugin:org.talend.hadoop.distribution.cdh5x",
       "excludeDependencies" : "true",
       "id" : "DYNAMIC_Cloudera_CDH6_1_1_pig_0_17_0_cdh6_1_1_jar",
-      "mvn_uri" : "mvn:org.apache.pig/pig/0.17.0-cdh6.1.1",
+      "mvn_uri" : "mvn:org.apache.pig/pig/0.17.0-cdh6.1.1/jar",
       "name" : "pig-0.17.0-cdh6.1.1.jar",
       "tagName" : "libraryNeeded"
     }, {
@@ -14834,9 +14751,9 @@
       "childNodes" : [ ],
       "context" : "plugin:org.talend.hadoop.distribution.cdh5x",
       "excludeDependencies" : "true",
-      "id" : "DYNAMIC_Cloudera_CDH6_1_1_zstd_jni_1_3_2_2_jar",
-      "mvn_uri" : "mvn:com.github.luben/zstd-jni/1.3.2-2/jar",
-      "name" : "zstd-jni-1.3.2-2.jar",
+      "id" : "DYNAMIC_Cloudera_CDH6_1_1_zookeeper_3_4_5_cdh6_1_1_jar",
+      "mvn_uri" : "mvn:org.apache.zookeeper/zookeeper/3.4.5-cdh6.1.1/jar",
+      "name" : "zookeeper-3.4.5-cdh6.1.1.jar",
       "tagName" : "libraryNeeded"
     }, {
       "childNodes" : [ ],
