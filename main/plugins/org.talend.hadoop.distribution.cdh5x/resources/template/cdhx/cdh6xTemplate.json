@@ -258,6 +258,59 @@
 				}
 			]
 		},
+        {
+            "id": "hive-common",
+            "type": "BASE",
+            "context": "{properties.context}",
+            "groupId": "org.apache.hive",
+            "artifactId": "hive-common",
+            "classifier": "",
+            "description": "",
+            "exclusions": [
+                {
+                    "groupId": "com.fasterxml.jackson.core",
+                    "artifactId": "*",
+                    "classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "org.apache.httpcomponents",
+                    "artifactId": "*",
+                    "classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "io.netty",
+                    "artifactId": "*",
+                    "classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "xerces",
+                    "artifactId": "*",
+                    "classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "org.glassfish",
+                    "artifactId": "javax.el",
+                    "classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "jdk.tools",
+                    "artifactId": "*",
+                    "classifier": "",
+                    "extension": "",
+                    "description": ""
+                }                
+            ]
+        },
 		{
 			"id": "hadoop-client",
 			"type": "BASE",
@@ -1022,7 +1075,6 @@
 			"context": "{properties.context}",
 			"groupId": "org.apache.spark",
 			"artifactId": "spark-hive_2.11",
-			"version": "2.4.0.cloudera2",
 			"classifier": "",
 			"description": "",
 			"exclusions": [
@@ -1457,7 +1509,9 @@
 			"id": "SPARK-HIVE-LIB-MRREQUIRED-DYNAMIC",
 			"description": "",
 			"modules": [
+			    "hive-common",
 				"hadoop-client"
+				
 			]
 		},
         {
