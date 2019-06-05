@@ -1122,7 +1122,6 @@
 			"context": "{properties.context}",
 			"groupId": "org.apache.spark",
 			"artifactId": "spark-mllib_2.11",
-			"version": "2.4.0.cloudera2",
 			"classifier": "",
 			"description": "",
 			"exclusions": [
@@ -1155,7 +1154,6 @@
 			"context": "{properties.context}",
 			"groupId": "org.apache.spark",
 			"artifactId": "spark-yarn_2.11",
-			"version": "2.4.0.cloudera2",
 			"classifier": "",
 			"description": "",
 			"exclusions": [
@@ -1463,7 +1461,6 @@
 			"modules": [
 				"hadoop-mapreduce-client-core",
 				"hadoop-yarn-server-web-proxy",
-				"spark-hive_2.11",
 				"spark-mllib_2.11",
 				"spark-yarn_2.11"
 			]
@@ -1509,6 +1506,7 @@
 			"id": "SPARK-HIVE-LIB-MRREQUIRED-DYNAMIC",
 			"description": "",
 			"modules": [
+			    "spark-hive_2.11",
 			    "hive-common",
 				"hadoop-client"
 				
