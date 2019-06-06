@@ -86,7 +86,16 @@
 			"artifactId": "navigator-sdk-client",
 			"version": "2.2",
 			"classifier": "",
-			"description": ""
+			"description": "",
+			"exclusions": [
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
+			]
 		},
 		{
 			"id": "datafu",
@@ -104,7 +113,14 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
-				}
+				},
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
 			]
 		},
 		{
@@ -308,7 +324,21 @@
                     "classifier": "",
                     "extension": "",
                     "description": ""
-                }                
+                },
+                {
+                    "groupId": "org.apache.logging.log4j",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
             ]
         },
 		{
@@ -361,7 +391,14 @@
                     "classifier": "",
                     "extension": "",
                     "description": ""
-                }                
+                },
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
 			]
 		},
 		{
@@ -386,7 +423,14 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
-				}
+				},
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
 			]
 		},
 		{
@@ -411,7 +455,14 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
-				}
+				},
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
 			]
 		},
 		{
@@ -450,7 +501,14 @@
                     "classifier": "",
                     "extension": "",
                     "description": ""
-				}
+				},
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
 			]
 		},
 		{
@@ -501,6 +559,20 @@
                     "groupId": "org.glassfish",
                     "artifactId": "javax.el",
                     "classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "org.apache.logging.log4j",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
                     "extension": "",
                     "description": ""
                 }
@@ -570,7 +642,21 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
-				}
+				},
+                {
+                    "groupId": "org.apache.logging.log4j",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
 			]
 		},
 		{
@@ -616,7 +702,21 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
-				}
+				},
+                {
+                    "groupId": "org.apache.logging.log4j",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
 			]
 		},
 		{
@@ -639,6 +739,13 @@
                     "groupId": "jdk.tools",
                     "artifactId": "*",
                     "classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
                     "extension": "",
                     "description": ""
                 }
@@ -678,6 +785,13 @@
                     "groupId": "org.glassfish",
                     "artifactId": "javax.el",
                     "classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
                     "extension": "",
                     "description": ""
                 }
@@ -740,7 +854,21 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
-				}
+				},
+                {
+                    "groupId": "org.apache.logging.log4j",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
 			]
 		},
 		{
@@ -793,7 +921,21 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
-				}
+				},
+                {
+                    "groupId": "org.apache.logging.log4j",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
 			]
 		},
 		{
@@ -853,7 +995,21 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
-				}
+				},
+                {
+                    "groupId": "org.apache.logging.log4j",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
 			]
 		},
 		{
@@ -899,6 +1055,20 @@
                     "classifier": "",
                     "extension": "",
                     "description": ""
+                },
+                {
+                    "groupId": "org.apache.logging.log4j",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
                 }
 			]
 		},
@@ -924,7 +1094,21 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
-				}
+				},
+                {
+                    "groupId": "org.apache.logging.log4j",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
 			]
 		},
 		{
@@ -996,7 +1180,14 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
-				}
+				},
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
 			]
 		},
 		{
@@ -1006,7 +1197,16 @@
 			"groupId": "org.apache.parquet",
 			"artifactId": "parquet-pig",
 			"classifier": "",
-			"description": ""
+			"description": "",
+			"exclusions": [
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
+			]
 		},
 		{
 			"id": "parquet-avro",
@@ -1021,6 +1221,13 @@
                     "groupId": "jdk.tools",
                     "artifactId": "*",
                     "classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
                     "extension": "",
                     "description": ""
                 }
@@ -1064,6 +1271,13 @@
                     "groupId": "jdk.tools",
                     "artifactId": "*",
                     "classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
                     "extension": "",
                     "description": ""
                 }
@@ -1113,7 +1327,14 @@
 					"extension": "",
 					"version": "1.1.0-cdh5.13.3",
                     "description": ""
-				}
+				},
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
 			]
 		},
 		{
@@ -1145,7 +1366,14 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
-				}
+				},
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
 			]
 		},
 		{
@@ -1154,7 +1382,6 @@
 			"context": "{properties.context}",
 			"groupId": "org.apache.spark",
 			"artifactId": "spark-yarn_2.11",
-			"version": "2.4.0.cloudera2",
 			"classifier": "",
 			"description": "",
 			"exclusions": [
@@ -1224,7 +1451,21 @@
 					"classifier": "",
 					"extension": "",
 					"description": ""
-				}
+				},
+                {
+                    "groupId": "org.apache.logging.log4j",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "commons-lang",
+                    "artifactId": "*",
+					"classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
 			]
 		},
 		{
