@@ -391,13 +391,6 @@
                     "classifier": "",
                     "extension": "",
                     "description": ""
-                },
-                {
-                    "groupId": "commons-lang",
-                    "artifactId": "*",
-					"classifier": "",
-                    "extension": "",
-                    "description": ""
                 }
 			]
 		},
@@ -568,13 +561,6 @@
 					"classifier": "",
                     "extension": "",
                     "description": ""
-                },
-                {
-                    "groupId": "commons-lang",
-                    "artifactId": "*",
-					"classifier": "",
-                    "extension": "",
-                    "description": ""
                 }
 			]
 		},
@@ -645,13 +631,6 @@
 				},
                 {
                     "groupId": "org.apache.logging.log4j",
-                    "artifactId": "*",
-					"classifier": "",
-                    "extension": "",
-                    "description": ""
-                },
-                {
-                    "groupId": "commons-lang",
                     "artifactId": "*",
 					"classifier": "",
                     "extension": "",
