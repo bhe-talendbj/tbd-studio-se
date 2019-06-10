@@ -1533,7 +1533,25 @@
             "mvnUri": "mvn:org.apache.hbase/hbase-mapreduce/2.0.0",
             "useStudioRepository": "true",
             "description": ""
-        }
+        },
+        {
+            "id": "hadoop-aws",
+            "type": "STANDARD",
+            "context": "{properties.context}",
+            "jarName": "hadoop-aws-3.0.0-cdh6.1.1.jar",
+            "mvnUri": "mvn:org.apache.hadoop/hadoop-aws/3.0.0-cdh6.1.1",
+            "useStudioRepository": "true",
+            "description": ""
+        },      
+        {
+            "id": "aws-java-sdk-bundle",
+            "type": "STANDARD",
+            "context": "{properties.context}",
+            "jarName": "aws-java-sdk-bundle-1.11.271.jar",
+            "mvnUri": "mvn:com.amazonaws/aws-java-sdk-bundle/1.11.271",
+            "useStudioRepository": "true",
+            "description": ""
+        }      
     ],
     "moduleGroups": [
         {
@@ -1773,7 +1791,15 @@
 				"hadoop-azure-datalake",
 				"hadoop-yarn-server-web-proxy"
 			]
-		}
+		},
+        {
+            "id": "SPARK-S3-LIB-MRREQUIRED-DYNAMIC",
+            "description": "",
+            "modules": [
+                "hadoop-aws",
+                "aws-java-sdk-bundle"
+            ]
+        }		
     ],
     "classLoaders": [
         {

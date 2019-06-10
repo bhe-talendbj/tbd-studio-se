@@ -264,4 +264,9 @@ HCatalogComponent, PigComponent, MRComponent, HiveComponent, HiveOnSparkComponen
         }
         return version;
     }
+
+    @Override
+    public boolean useS3AProperties() {
+        return false;
+    }
 }
