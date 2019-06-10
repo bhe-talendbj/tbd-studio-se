@@ -1551,7 +1551,56 @@
             "mvnUri": "mvn:com.amazonaws/aws-java-sdk-bundle/1.11.271",
             "useStudioRepository": "true",
             "description": ""
-        }      
+        },   
+        {
+            "id": "spark-streaming-kinesis-asl_2.11",
+            "type": "BASE",
+            "context": "{properties.context}",
+            "groupId": "org.apache.spark",
+            "artifactId": "spark-streaming-kinesis-asl_2.11",
+            "version": "2.4.0",
+            "classifier": "",
+            "description": "",
+            "exclusions": [
+                {
+                    "groupId": "org.apache.hadoop",
+                    "artifactId": "*",
+                    "classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "xerces",
+                    "artifactId": "*",
+                    "classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "com.fasterxml.jackson.core",
+                    "artifactId": "*",
+                    "classifier": "",
+                    "extension": "",
+                    "description": ""
+                },
+                {
+                    "groupId": "com.fasterxml.jackson.dataformat",
+                    "artifactId": "*",
+                    "classifier": "",
+                    "extension": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "jackson-dataformat-cbor",
+            "type": "STANDARD",
+            "context": "{properties.context}",
+            "jarName": "jackson-dataformat-cbor-2.9.5.jar",
+            "mvnUri": "mvn:com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.9.5",
+            "useStudioRepository": "true",
+            "description": ""
+        }                
     ],
     "moduleGroups": [
         {
@@ -1799,7 +1848,16 @@
                 "hadoop-aws",
                 "aws-java-sdk-bundle"
             ]
-        }		
+        },
+        {
+            "id": "SPARK2-KINESIS-LIB-MRREQUIRED-DYNAMIC",
+            "description": "",
+            "modules": [
+                "hadoop-client",
+                "spark-streaming-kinesis-asl_2.11",
+                "jackson-dataformat-cbor"
+            ]
+        }        		
     ],
     "classLoaders": [
         {
