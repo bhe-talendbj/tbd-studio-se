@@ -223,8 +223,9 @@ public class DynamicModuleAdapter extends AbstractDynamicAdapter {
 
         List<String> registedRuntimeIds = new ArrayList<>();
         String registedModulesKey = getRegistedModulesKey(node);
-        String jarName = node.getJarName();
-        String runtimeId = DynamicDistributionUtils.getPluginKey(distribution, version, id, jarName);
+        String jarName = DynamicDistributionUtils.getJarName(node);
+        String moduleId = DynamicDistributionUtils.formatId(jarName);
+        String runtimeId = DynamicDistributionUtils.getPluginKey(distribution, version, id, moduleId);
         if (!registedModules.contains(registedModulesKey)) {
             ModuleNeeded moduleNeeded = null;
             if (reuseExistingJars()) {

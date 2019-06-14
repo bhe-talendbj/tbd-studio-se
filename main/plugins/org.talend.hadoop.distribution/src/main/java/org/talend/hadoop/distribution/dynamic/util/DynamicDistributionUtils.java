@@ -24,6 +24,7 @@ import java.util.Set;
 
 import org.apache.commons.lang.StringUtils;
 import org.talend.commons.exception.ExceptionHandler;
+import org.talend.core.runtime.maven.MavenArtifact;
 import org.talend.core.runtime.maven.MavenUrlHelper;
 import org.talend.designer.maven.aether.IDynamicMonitor;
 import org.talend.designer.maven.aether.node.DependencyNode;
@@ -35,6 +36,8 @@ import org.talend.hadoop.distribution.i18n.Messages;
  * DOC cmeng  class global comment. Detailled comment
  */
 public class DynamicDistributionUtils {
+
+    private static final String TYPE_JAR = "jar";
 
     public static List<ESparkVersion> convert2ESparkVersions(List<String> sparkVersions) {
         List<ESparkVersion> versions = new ArrayList<>();
@@ -235,6 +238,26 @@ public class DynamicDistributionUtils {
         }
         return MavenUrlHelper.generateMvnUrl(repositoryUri, node.getGroupId(), node.getArtifactId(), node.getVersion(), extension,
                 classifier);
+    }
+
+    public static String getJarName(DependencyNode node) {
+        String extension = node.getExtension();
+        if (extension == null || extension.trim().isEmpty() || TYPE_JAR.equalsIgnoreCase(extension)) {
+            extension = TYPE_JAR;
+        }
+        String jarName = node.getGroupId() + "-" + node.getArtifactId() + "-" + node.getClassifier() + "-" + node.getVersion()
+                + "." + extension;
+        return jarName;
+    }
+
+    public static String getJarName(MavenArtifact node) {
+        String extension = node.getType();
+        if (extension == null || extension.trim().isEmpty() || TYPE_JAR.equalsIgnoreCase(extension)) {
+            extension = TYPE_JAR;
+        }
+        String jarName = node.getGroupId() + "-" + node.getArtifactId() + "-" + node.getClassifier() + "-" + node.getVersion()
+                + "." + extension;
+        return jarName;
     }
 
     public static void checkCancelOrNot(IDynamicMonitor monitor) throws InterruptedException {

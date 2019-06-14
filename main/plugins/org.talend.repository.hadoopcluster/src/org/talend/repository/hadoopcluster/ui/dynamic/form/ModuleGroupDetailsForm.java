@@ -515,7 +515,7 @@ public class ModuleGroupDetailsForm extends AbstractModuleGroupDetailsForm {
                         String artifactId = mavenArtifact.getArtifactId();
                         String version = mavenArtifact.getVersion();
                         if (StringUtils.isNoneEmpty(groupId, artifactId, version)) {
-                            String jarName = mavenArtifact.getFileName();
+                            String jarName = DynamicDistributionUtils.getJarName(mavenArtifact);
                             DynamicPluginAdapter pluginAdapter = moduleGroupData.getPluginAdapter();
                             IDynamicPluginConfiguration pluginConfiguration = pluginAdapter.getPluginConfiguration();
 

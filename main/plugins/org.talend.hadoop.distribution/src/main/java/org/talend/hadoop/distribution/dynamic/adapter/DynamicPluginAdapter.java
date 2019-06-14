@@ -300,6 +300,7 @@ public class DynamicPluginAdapter {
         Map<String, IDynamicConfiguration> latestGaMap = new HashMap<>();
         Set<IDynamicConfiguration> oldVersionModuleSet = new HashSet<>();
         Set<String> oldVersionModuleIdSet = new HashSet<>();
+        Map<String, Set<String>> pomsMap = new HashMap<>();
         for (IDynamicConfiguration module : moduleMap.values()) {
             String mvnUri = (String) module.getAttribute(DynamicModuleAdapter.ATTR_MVN_URI);
             if (StringUtils.isEmpty(mvnUri)) {
@@ -307,6 +308,14 @@ public class DynamicPluginAdapter {
             }
             MavenArtifact curMa = MavenUrlHelper.parseMvnUrl(mvnUri);
             String key = getGaKey(curMa);
+            if (TYPE_POM.equalsIgnoreCase(curMa.getType())) {
+                Set<String> pomSet = pomsMap.get(key);
+                if (pomSet == null) {
+                    pomSet = new HashSet<>();
+                    pomsMap.put(key, pomSet);
+                }
+                pomSet.add((String) module.getAttribute(DynamicModuleAdapter.ATTR_ID));
+            }
             IDynamicConfiguration storedModuleConfig = latestGaMap.get(key);
             if (storedModuleConfig == null) {
                 latestGaMap.put(key, module);
@@ -352,7 +361,7 @@ public class DynamicPluginAdapter {
                         String latestModuleId = (String) latestModule.getAttribute(DynamicModuleAdapter.ATTR_ID);
                         if (TYPE_POM.equalsIgnoreCase(ma.getType())) {
                             // keep all poms
-                            newAddedConfigIds.add(latestModuleId);
+                            newAddedConfigIds.addAll(pomsMap.get(key));
                             keepIds.add(libraryId);
                         } else {
                             childConfig.setAttribute(DynamicModuleGroupAdapter.ATTR_LIBRARY_ID, latestModuleId);
