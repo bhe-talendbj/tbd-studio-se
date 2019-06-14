@@ -1,6 +1,6 @@
 // ============================================================================
 //
-// Copyright (C) 2006-2018 Talend Inc. - www.talend.com
+// Copyright (C) 2006-2019 Talend Inc. - www.talend.com
 //
 // This source code is available under agreement available at
 // %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
@@ -53,6 +53,7 @@ import org.talend.hadoop.distribution.cdh5120.modulegroup.node.sparkstreaming.CD
 import org.talend.hadoop.distribution.cdh5120.modulegroup.node.sparkstreaming.CDH5120SparkStreamingKinesisNodeModuleGroup;
 import org.talend.hadoop.distribution.cdh5120.modulegroup.node.sparkstreaming.CDH5120SparkStreamingParquetNodeModuleGroup;
 import org.talend.hadoop.distribution.cdh5120.modulegroup.node.sparkstreaming.CDH5120SparkStreamingS3NodeModuleGroup;
+import org.talend.hadoop.distribution.component.CDHSparkBatchComponent;
 import org.talend.hadoop.distribution.component.HBaseComponent;
 import org.talend.hadoop.distribution.component.HCatalogComponent;
 import org.talend.hadoop.distribution.component.HDFSComponent;
@@ -61,7 +62,6 @@ import org.talend.hadoop.distribution.component.HiveOnSparkComponent;
 import org.talend.hadoop.distribution.component.ImpalaComponent;
 import org.talend.hadoop.distribution.component.MRComponent;
 import org.talend.hadoop.distribution.component.PigComponent;
-import org.talend.hadoop.distribution.component.SparkBatchComponent;
 import org.talend.hadoop.distribution.component.SparkStreamingComponent;
 import org.talend.hadoop.distribution.component.SqoopComponent;
 import org.talend.hadoop.distribution.condition.ComponentCondition;
@@ -72,12 +72,13 @@ import org.talend.hadoop.distribution.constants.SparkBatchConstant;
 import org.talend.hadoop.distribution.constants.SparkStreamingConstant;
 import org.talend.hadoop.distribution.constants.cdh.IClouderaDistribution;
 import org.talend.hadoop.distribution.kafka.SparkStreamingKafkaVersion;
+import org.talend.hadoop.distribution.kudu.KuduVersion;
 import org.talend.hadoop.distribution.spark.SparkClassPathUtils;
 
 @SuppressWarnings("nls")
 public class CDH5120Distribution extends AbstractDistribution implements IClouderaDistribution, HDFSComponent,
         HBaseComponent, HCatalogComponent, PigComponent, MRComponent, HiveComponent, HiveOnSparkComponent,
-        ImpalaComponent, SqoopComponent, SparkBatchComponent, SparkStreamingComponent {
+        ImpalaComponent, SqoopComponent, CDHSparkBatchComponent, SparkStreamingComponent {
 
     public final static String VERSION = "Cloudera_CDH5_12";
 
@@ -115,7 +116,7 @@ public class CDH5120Distribution extends AbstractDistribution implements ICloude
 
         // Used to add a module group import for a specific node. The given node must have a HADOOP_LIBRARIES parameter.
         nodeModuleGroups = new HashMap<>();
-        
+
         // WebHDFS/ADLS
         Set<DistributionModuleGroup> webHDFSNodeModuleGroups = CDH5120WebHDFSModuleGroup.getModuleGroups(distribution, version);
         for(String hdfsComponent : HDFSConstant.hdfsComponents) {
@@ -230,7 +231,7 @@ public class CDH5120Distribution extends AbstractDistribution implements ICloude
                 SparkStreamingConstant.DYNAMODB_OUTPUT_COMPONENT), dynamoDBNodeModuleGroups);
         nodeModuleGroups.put(new NodeComponentTypeBean(ComponentType.SPARKSTREAMING,
                 SparkStreamingConstant.DYNAMODB_CONFIGURATION_COMPONENT), dynamoDBConfigurationModuleGroups);
-        
+
         displayConditions = new HashMap<>();
     }
 
@@ -517,9 +518,14 @@ public class CDH5120Distribution extends AbstractDistribution implements ICloude
     public boolean doSupportAvroDeflateProperties(){
         return true;
     }
-    
+
     @Override
     public boolean useOldAWSAPI() {
         return false;
+    }
+
+    @Override
+    public KuduVersion getKuduVersion() {
+        return KuduVersion.KUDU_1_7;
     }
 }
