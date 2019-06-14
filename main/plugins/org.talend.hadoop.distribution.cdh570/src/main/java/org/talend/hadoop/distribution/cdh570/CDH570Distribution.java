@@ -1,6 +1,6 @@
 // ============================================================================
 //
-// Copyright (C) 2006-2018 Talend Inc. - www.talend.com
+// Copyright (C) 2006-2019 Talend Inc. - www.talend.com
 //
 // This source code is available under agreement available at
 // %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
@@ -50,6 +50,7 @@ import org.talend.hadoop.distribution.cdh570.modulegroup.node.sparkstreaming.CDH
 import org.talend.hadoop.distribution.cdh570.modulegroup.node.sparkstreaming.CDH570SparkStreamingKinesisNodeModuleGroup;
 import org.talend.hadoop.distribution.cdh570.modulegroup.node.sparkstreaming.CDH570SparkStreamingParquetNodeModuleGroup;
 import org.talend.hadoop.distribution.cdh570.modulegroup.node.sparkstreaming.CDH570SparkStreamingS3NodeModuleGroup;
+import org.talend.hadoop.distribution.component.CDHSparkBatchComponent;
 import org.talend.hadoop.distribution.component.HBaseComponent;
 import org.talend.hadoop.distribution.component.HCatalogComponent;
 import org.talend.hadoop.distribution.component.HDFSComponent;
@@ -58,7 +59,6 @@ import org.talend.hadoop.distribution.component.HiveOnSparkComponent;
 import org.talend.hadoop.distribution.component.ImpalaComponent;
 import org.talend.hadoop.distribution.component.MRComponent;
 import org.talend.hadoop.distribution.component.PigComponent;
-import org.talend.hadoop.distribution.component.SparkBatchComponent;
 import org.talend.hadoop.distribution.component.SparkStreamingComponent;
 import org.talend.hadoop.distribution.component.SqoopComponent;
 import org.talend.hadoop.distribution.condition.ComponentCondition;
@@ -68,10 +68,12 @@ import org.talend.hadoop.distribution.constants.PigOutputConstant;
 import org.talend.hadoop.distribution.constants.SparkBatchConstant;
 import org.talend.hadoop.distribution.constants.SparkStreamingConstant;
 import org.talend.hadoop.distribution.constants.cdh.IClouderaDistribution;
+import org.talend.hadoop.distribution.kudu.KuduVersion;
 
 @SuppressWarnings("nls")
 public class CDH570Distribution extends AbstractDistribution implements HDFSComponent, MRComponent, HBaseComponent, PigComponent,
-        HiveComponent, ImpalaComponent, HCatalogComponent, SparkBatchComponent, SparkStreamingComponent, HiveOnSparkComponent,
+ HiveComponent, ImpalaComponent, HCatalogComponent, CDHSparkBatchComponent,
+        SparkStreamingComponent, HiveOnSparkComponent,
         SqoopComponent, IClouderaDistribution {
 
     public final static String VERSION = "Cloudera_CDH5_7";
@@ -109,7 +111,7 @@ public class CDH570Distribution extends AbstractDistribution implements HDFSComp
 
         // Used to add a module group import for a specific node. The given node must have a HADOOP_LIBRARIES parameter.
         nodeModuleGroups = new HashMap<>();
-        
+
         // WebHDFS
         Set<DistributionModuleGroup> webHDFSNodeModuleGroups = CDH570WebHDFSModuleGroup.getModuleGroups(distribution, version);
         for(String hdfsComponent : HDFSConstant.hdfsComponents) {
@@ -120,7 +122,7 @@ public class CDH570Distribution extends AbstractDistribution implements HDFSComp
         nodeModuleGroups.put(
                 new NodeComponentTypeBean(ComponentType.SPARKBATCH, SparkBatchConstant.AZURE_CONFIGURATION_COMPONENT),
                 CDH570SparkBatchAzureNodeModuleGroup.getModuleGroups(distribution, version));
-        nodeModuleGroups.put(new NodeComponentTypeBean(ComponentType.SPARKSTREAMING, SparkStreamingConstant.AZURE_CONFIGURATION_COMPONENT), 
+        nodeModuleGroups.put(new NodeComponentTypeBean(ComponentType.SPARKSTREAMING, SparkStreamingConstant.AZURE_CONFIGURATION_COMPONENT),
                 CDH570SparkBatchAzureNodeModuleGroup.getModuleGroups(distribution, version));
 
         nodeModuleGroups.put(new NodeComponentTypeBean(ComponentType.MAPREDUCE, MRConstant.S3_INPUT_COMPONENT),
@@ -428,9 +430,14 @@ public class CDH570Distribution extends AbstractDistribution implements HDFSComp
     public boolean doSupportAzureDataLakeStorage() {
         return false;
     }
-    
+
     @Override
     public boolean doSupportAvroDeflateProperties(){
         return true;
+    }
+
+    @Override
+    public KuduVersion getKuduVersion() {
+        return KuduVersion.KUDU_1_7;
     }
 }

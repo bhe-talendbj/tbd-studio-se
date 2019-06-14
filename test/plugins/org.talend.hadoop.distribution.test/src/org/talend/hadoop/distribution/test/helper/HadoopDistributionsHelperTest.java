@@ -1,6 +1,6 @@
 // ============================================================================
 //
-// Copyright (C) 2006-2018 Talend Inc. - www.talend.com
+// Copyright (C) 2006-2019 Talend Inc. - www.talend.com
 //
 // This source code is available under agreement available at
 // %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
@@ -89,6 +89,7 @@ public class HadoopDistributionsHelperTest {
     @Test
     public void testMapRDistribution() {
         testDistributionOnly("MAPR", "MapR", new String[][] {
+                { "MAPR610", "MapR 6.1.0(YARN mode)", "HADOOP_2" },
                 { "MAPR601", "MapR 6.0.1(YARN mode)", "HADOOP_2" },
                 { "MAPR600", "MapR 6.0.0(YARN mode)", "HADOOP_2" },
                 { "MAPR520", "MapR 5.2.0(YARN mode)", "HADOOP_2" },

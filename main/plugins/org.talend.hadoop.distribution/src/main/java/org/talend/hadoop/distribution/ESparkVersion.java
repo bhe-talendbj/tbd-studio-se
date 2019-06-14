@@ -1,6 +1,6 @@
 // ============================================================================
 //
-// Copyright (C) 2006-2018 Talend Inc. - www.talend.com
+// Copyright (C) 2006-2019 Talend Inc. - www.talend.com
 //
 // This source code is available under agreement available at
 // %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
@@ -16,7 +16,7 @@ import java.util.Comparator;
 
 /**
  * Describes the spark version.
- * 
+ *
  * The enum order is used to determine whether a spark version is later than another.
  */
 public enum ESparkVersion {
@@ -27,7 +27,8 @@ public enum ESparkVersion {
     SPARK_2_0("SPARK_2_0_0", "2.0"), //$NON-NLS-1$ //$NON-NLS-2$
     SPARK_2_1("SPARK_2_1_0", "2.1"), //$NON-NLS-1$ //$NON-NLS-2$
     SPARK_2_2("SPARK_2_2_0", "2.2"), //$NON-NLS-1$ //$NON-NLS-2$
-    SPARK_2_3("SPARK_2_3_0", "2.3"); //$NON-NLS-1$ //$NON-NLS-2$
+    SPARK_2_3("SPARK_2_3_0", "2.3"), //$NON-NLS-1$ //$NON-NLS-2$
+    SPARK_2_4("SPARK_2_4_0", "2.4"); //$NON-NLS-1$ //$NON-NLS-2$
 
     private String sparkVersion;
 

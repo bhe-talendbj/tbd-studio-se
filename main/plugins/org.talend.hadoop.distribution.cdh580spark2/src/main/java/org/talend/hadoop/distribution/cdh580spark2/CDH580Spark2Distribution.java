@@ -1,6 +1,6 @@
 // ============================================================================
 //
-// Copyright (C) 2006-2018 Talend Inc. - www.talend.com
+// Copyright (C) 2006-2019 Talend Inc. - www.talend.com
 //
 // This source code is available under agreement available at
 // %InstallDIR%\features\org.talend.rcp.branding.%PRODUCTNAME%\%PRODUCTNAME%license.txt
@@ -39,17 +39,19 @@ import org.talend.hadoop.distribution.cdh580spark2.modulegroup.node.sparkstreami
 import org.talend.hadoop.distribution.cdh580spark2.modulegroup.node.sparkstreaming.CDH580Spark2SparkStreamingKinesisNodeModuleGroup;
 import org.talend.hadoop.distribution.cdh580spark2.modulegroup.node.sparkstreaming.CDH580Spark2SparkStreamingParquetNodeModuleGroup;
 import org.talend.hadoop.distribution.cdh580spark2.modulegroup.node.sparkstreaming.CDH580Spark2SparkStreamingS3NodeModuleGroup;
-import org.talend.hadoop.distribution.component.SparkBatchComponent;
+import org.talend.hadoop.distribution.component.CDHSparkBatchComponent;
 import org.talend.hadoop.distribution.component.SparkStreamingComponent;
 import org.talend.hadoop.distribution.condition.ComponentCondition;
 import org.talend.hadoop.distribution.constants.SparkBatchConstant;
 import org.talend.hadoop.distribution.constants.SparkStreamingConstant;
 import org.talend.hadoop.distribution.constants.cdh.IClouderaDistribution;
 import org.talend.hadoop.distribution.kafka.SparkStreamingKafkaVersion;
+import org.talend.hadoop.distribution.kudu.KuduVersion;
 import org.talend.hadoop.distribution.spark.SparkClassPathUtils;
 
 @SuppressWarnings("nls")
-public class CDH580Spark2Distribution extends AbstractDistribution implements IClouderaDistribution, SparkBatchComponent,
+public class CDH580Spark2Distribution extends AbstractDistribution implements IClouderaDistribution,
+        CDHSparkBatchComponent,
         SparkStreamingComponent {
 
     public final static String VERSION = "Cloudera_CDH580_Spark2";
@@ -297,7 +299,7 @@ public class CDH580Spark2Distribution extends AbstractDistribution implements IC
     public boolean doSupportOozie() {
         return false;
     }
-    
+
     @Override
     public boolean doSupportCreateServiceConnection() {
         return false;
@@ -320,5 +322,10 @@ public class CDH580Spark2Distribution extends AbstractDistribution implements IC
     @Override
     public short orderingWeight() {
         return 5;
+    }
+
+    @Override
+    public KuduVersion getKuduVersion() {
+        return KuduVersion.KUDU_1_7;
     }
 }
