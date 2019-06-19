@@ -254,9 +254,9 @@
 				NAME="org.apache.servicemix.bundles.jline-0.9.94_1"
 				UrlPath="platform:/plugin/org.talend.libraries.neo4j/lib/org.apache.servicemix.bundles.jline-0.9.94_1.jar"
 				REQUIRED_IF="(DB_VERSION=='NEO4J_1_X_X') AND (USE_EXISTING_CONNECTION == 'false')" />
-			<IMPORT MODULE="scala-library-2.9.1-1.jar"
-				MVN="mvn:org.talend.libraries/scala-library-2.9.1-1/6.0.0" NAME="scala-library-2.9.1-1"
-				UrlPath="platform:/plugin/org.talend.libraries.neo4j/lib/scala-library-2.9.1-1.jar"
+			<IMPORT MODULE="scala-library-2.10.4.jar"
+				MVN="mvn:org.talend.libraries/scala-library-2.10.4/6.0.0" NAME="scala-library-2.10.4"
+				UrlPath="platform:/plugin/org.talend.libraries.neo4j/lib/scala-library-2.10.4.jar"
 				REQUIRED_IF="(DB_VERSION=='NEO4J_1_X_X') AND (USE_EXISTING_CONNECTION == 'false')" />
 			<IMPORT MODULE="server-api-1.9.9.jar"
 				MVN="mvn:org.neo4j/server-api/1.9.9" NAME="server-api-1.9.9"
