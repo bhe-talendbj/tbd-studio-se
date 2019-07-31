@@ -43,7 +43,7 @@ public abstract class AbstractDynamicDistributionSetupForm extends AbstractDynam
     }
 
     protected void saveDynamicDistribution(IDynamicPlugin dynamicPlugin, IDynamicDistributionsGroup dynDistrGroup,
-            ActionType actionType, IDynamicMonitor dMonitor) throws Exception {
+            ActionType actionType, final IDynamicMonitor dMonitor) throws Exception {
         IDynamicPluginConfiguration pluginConfiguration = dynamicPlugin.getPluginConfiguration();
         dMonitor.beginTask(
                 Messages.getString("AbstractDynamicDistributionSetupForm.progress.saving", pluginConfiguration.getName()), //$NON-NLS-1$

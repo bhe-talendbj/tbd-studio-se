@@ -203,7 +203,7 @@ public abstract class AbstractConnectionForm extends Composite {
     }
 
     private void retrieveByJobServer() {
-        IRunnableWithProgress iRunnableWithProgress = new IRunnableWithProgress() {
+        final IRunnableWithProgress iRunnableWithProgress = new IRunnableWithProgress() {
 
             @Override
             public void run(IProgressMonitor monitor) throws InvocationTargetException, InterruptedException {

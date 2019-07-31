@@ -599,7 +599,7 @@ public class DynamicDistributionOptionForm extends AbstractDynamicDistributionSe
 
         try {
             DynamicDistributionSetupData dynConfigData = getDynamicDistributionSetupData();
-            IDynamicDistributionsGroup dynDistrGroup = dynConfigData.getDynamicDistributionsGroup();
+            final IDynamicDistributionsGroup dynDistrGroup = dynConfigData.getDynamicDistributionsGroup();
             final Throwable throwable[] = new Throwable[1];
 
             final boolean showOnlyCompatibleVersions = showOnlyCompatibleBtn.getSelection();

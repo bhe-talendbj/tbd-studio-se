@@ -574,13 +574,13 @@ public class DynamicDistributionPreferenceForm extends AbstractDynamicDistributi
         }
     }
 
-    private void doDelete(IDynamicPlugin dynamicPlugin) throws Throwable {
+    private void doDelete(final IDynamicPlugin dynamicPlugin) throws Throwable {
         final Throwable throwable[] = new Throwable[1];
         ProgressMonitorDialog progressDialog = new ProgressMonitorDialog(getShell());
         progressDialog.run(true, false, new IRunnableWithProgress() {
 
             @Override
-            public void run(IProgressMonitor pMonitor) throws InvocationTargetException, InterruptedException {
+            public void run(final IProgressMonitor pMonitor) throws InvocationTargetException, InterruptedException {
 
                 ProxyRepositoryFactory.getInstance().executeRepositoryWorkUnit(new RepositoryWorkUnit<Boolean>(
                         Messages.getString("DynamicDistributionPreferenceForm.form.deleteExistingConfig.workunit.title")) { //$NON-NLS-1$
@@ -598,7 +598,7 @@ public class DynamicDistributionPreferenceForm extends AbstractDynamicDistributi
                             IDynamicPluginConfiguration pluginConfiguration = dynamicPlugin.getPluginConfiguration();
                             monitor.beginTask(Messages.getString("DynamicDistributionPreferenceForm.delete.progress.unregist", //$NON-NLS-1$
                                     pluginConfiguration.getName()), IDynamicMonitor.UNKNOWN);
-                            String distribution = pluginConfiguration.getDistribution();
+                             String distribution = pluginConfiguration.getDistribution();
                             IDynamicDistributionsGroup dynamicDistributionGroup = DynamicDistributionManager.getInstance()
                                     .getDynamicDistributionGroup(distribution);
                             dynamicDistributionGroup.unregister(dynamicPlugin, monitor);
