@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<component name="DynamicHDP3xxDistribution">
+  <implementation class="org.talend.hadoop.distribution.hdp3x.DynamicHDP3xxDistribution"/>
+  <service>
+    <provide interface="org.talend.hadoop.distribution.dynamic.hdp.IDynamicHDPDistribution"/>
+  </service>
+</component>
