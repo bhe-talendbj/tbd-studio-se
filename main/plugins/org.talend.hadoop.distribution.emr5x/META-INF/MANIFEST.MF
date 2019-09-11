@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Emr5x
+Bundle-SymbolicName: org.talend.hadoop.distribution.emr5x;singleton:=true
+Bundle-Version: 7.3.1.qualifier
+Bundle-Vendor: .Talend SA.
+Service-Component: OSGI-INF/emr5x.xml
+Bundle-Activator: org.talend.hadoop.distribution.emr5x.EMR5xPlugin
+Require-Bundle: org.eclipse.core.runtime,
+ org.talend.core.runtime,
+ org.talend.hadoop.distribution,
+ org.eclipse.ui,
+ org.talend.designer.maven.aether,
+ org.talend.libraries.jackson
+Bundle-ActivationPolicy: lazy

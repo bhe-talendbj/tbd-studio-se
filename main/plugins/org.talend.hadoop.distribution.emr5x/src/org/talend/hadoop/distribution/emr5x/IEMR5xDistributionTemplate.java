@@ -10,12 +10,16 @@
 // 9 rue Pages 92150 Suresnes, France
 //
 // ============================================================================
-package org.talend.hadoop.distribution.constants.emr;
+package org.talend.hadoop.distribution.emr5x;
 
-@SuppressWarnings("nls")
-public interface IAmazonDistribution {
+import org.talend.hadoop.distribution.dynamic.template.emr.IDynamicEMRDistributionTemplate;
 
-    static final String DISTRIBUTION_NAME = "AMAZON_EMR";
 
-    static final String DISTRIBUTION_DISPLAY_NAME = "Amazon EMR";
+/**
+ * 
+ * @author aparent
+ *
+ */
+public interface IEMR5xDistributionTemplate extends IDynamicEMRDistributionTemplate {
+
 }

@@ -10,12 +10,25 @@
 // 9 rue Pages 92150 Suresnes, France
 //
 // ============================================================================
-package org.talend.hadoop.distribution.constants.emr;
+package org.talend.hadoop.distribution.dynamic.pref.emr;
 
-@SuppressWarnings("nls")
-public interface IAmazonDistribution {
+import org.eclipse.ui.preferences.ScopedPreferenceStore;
 
-    static final String DISTRIBUTION_NAME = "AMAZON_EMR";
 
-    static final String DISTRIBUTION_DISPLAY_NAME = "Amazon EMR";
+/**
+ * 
+ * @author aparent
+ *
+ */
+public class DynamicEMRDistributionPreference extends AbstractDynamicEMRDistributionPreference {
+
+    /**
+     * Use preference factory to get new instance
+     *
+     * @param store
+     */
+    public DynamicEMRDistributionPreference(ScopedPreferenceStore store) {
+        super(store);
+    }
+
 }

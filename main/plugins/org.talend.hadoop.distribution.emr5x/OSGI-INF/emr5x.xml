@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<component name="DynamicEMR5xDistribution">
+  <implementation class="org.talend.hadoop.distribution.emr5x.DynamicEMR5xDistribution"/>
+  <service>
+    <provide interface="org.talend.hadoop.distribution.dynamic.emr.IDynamicEMRDistribution"/>
+  </service>
+</component>
