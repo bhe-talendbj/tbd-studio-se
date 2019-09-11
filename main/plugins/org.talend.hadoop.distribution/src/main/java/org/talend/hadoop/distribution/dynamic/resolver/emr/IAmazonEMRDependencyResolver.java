@@ -12,7 +12,7 @@
 // ============================================================================
 package org.talend.hadoop.distribution.dynamic.resolver.emr;
 
-import org.talend.hadoop.distribution.constants.emr.IAmazonDistribution;
+import org.talend.hadoop.distribution.constants.emr.IAmazonEMRDistribution;
 import org.talend.hadoop.distribution.dynamic.resolver.IDependencyResolver;
 
 /**
@@ -22,6 +22,6 @@ import org.talend.hadoop.distribution.dynamic.resolver.IDependencyResolver;
  */
 public interface IAmazonEMRDependencyResolver extends IDependencyResolver {
 
-    public static final String DISTRIBUTION = IAmazonDistribution.DISTRIBUTION_NAME;
+    public static final String DISTRIBUTION = IAmazonEMRDistribution.DISTRIBUTION_NAME;
 
 }

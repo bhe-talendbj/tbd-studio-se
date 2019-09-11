@@ -12,7 +12,7 @@
 // ============================================================================
 package org.talend.hadoop.distribution.dynamic.emr;
 
-import org.talend.hadoop.distribution.constants.emr.IAmazonDistribution;
+import org.talend.hadoop.distribution.constants.emr.IAmazonEMRDistribution;
 import org.talend.hadoop.distribution.dynamic.IDynamicDistributionsGroup;
 
 
@@ -23,7 +23,7 @@ import org.talend.hadoop.distribution.dynamic.IDynamicDistributionsGroup;
  */
 public interface IDynamicEMRDistributionsGroup extends IDynamicDistributionsGroup {
 
-    public static final String DISTRIBUTION_NAME = IAmazonDistribution.DISTRIBUTION_NAME;
+    public static final String DISTRIBUTION_NAME = IAmazonEMRDistribution.DISTRIBUTION_NAME;
 
-    public static final String DISTRIBUTION_DISPLAY_NAME = IAmazonDistribution.DISTRIBUTION_DISPLAY_NAME;
+    public static final String DISTRIBUTION_DISPLAY_NAME = IAmazonEMRDistribution.DISTRIBUTION_DISPLAY_NAME;
 }

@@ -12,7 +12,7 @@
 // ============================================================================
 package org.talend.hadoop.distribution.dynamic.template.emr;
 
-import org.talend.hadoop.distribution.constants.emr.IAmazonDistribution;
+import org.talend.hadoop.distribution.constants.emr.IAmazonEMRDistribution;
 import org.talend.hadoop.distribution.dynamic.template.IDynamicDistributionTemplate;
 
 
@@ -21,6 +21,6 @@ import org.talend.hadoop.distribution.dynamic.template.IDynamicDistributionTempl
  * @author aparent
  *
  */
-public interface IDynamicEMRDistributionTemplate extends IDynamicDistributionTemplate, IAmazonDistribution {
+public interface IDynamicEMRDistributionTemplate extends IDynamicDistributionTemplate, IAmazonEMRDistribution {
 
 }

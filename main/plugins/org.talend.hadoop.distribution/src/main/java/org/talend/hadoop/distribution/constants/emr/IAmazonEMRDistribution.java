@@ -13,7 +13,7 @@
 package org.talend.hadoop.distribution.constants.emr;
 
 @SuppressWarnings("nls")
-public interface IAmazonDistribution {
+public interface IAmazonEMRDistribution {
 
     static final String DISTRIBUTION_NAME = "AMAZON_EMR";
 
