@@ -34,12 +34,6 @@
             name="zkclient-0.7.jar" 
             mvn_uri="mvn:org.talend.libraries/zkclient-0.7/6.0.0"
             uripath="platform:/plugin/org.talend.libraries.apache.kafka/lib/zkclient-0.7.jar"/>
-        <libraryNeeded
-            context="plugin:org.talend.libraries.apache.kafka"
-            id="slf4j-log4j12-1.7.6.jar"
-            name="slf4j-log4j12-1.7.6.jar" 
-            mvn_uri="mvn:org.talend.libraries/slf4j-log4j12-1.7.6/6.2.0"
-            uripath="platform:/plugin/org.talend.libraries.apache.kafka/lib/slf4j-log4j12-1.7.6.jar"/>
             
         <!-- Kafka 0.10.0.1 libraries -->
         <libraryNeeded
@@ -67,16 +61,6 @@
             id="zkclient-0.8.jar"
             name="zkclient-0.8.jar" 
             mvn_uri="mvn:org.talend.libraries/zkclient-0.8/6.3.0"/>
-        <libraryNeeded
-            context="plugin:org.talend.libraries.apache.kafka"
-            id="slf4j-log4j12-1.7.21.jar"
-            name="slf4j-log4j12-1.7.21.jar" 
-            mvn_uri="mvn:org.talend.libraries/slf4j-log4j12-1.7.21/6.3.0"/>
-        <libraryNeeded
-            context="plugin:org.talend.libraries.apache.kafka"
-            id="slf4j-api-1.7.21.jar"
-            name="slf4j-api-1.7.21.jar" 
-            mvn_uri="mvn:org.talend.libraries/slf4j-api-1.7.21/6.3.0"/>
         <libraryNeeded
             context="plugin:org.talend.libraries.apache.kafka"
             id="jopt-simple-4.9.jar"
@@ -115,16 +99,6 @@
             name="zkclient-0.10.jar" 
             mvn_uri="mvn:com.101tec/zkclient/0.10"/>
         <libraryNeeded
-            context="plugin:org.talend.libraries"
-            id="slf4j-log4j12-1.7.25.jar"
-            name="slf4j-log4j12-1.7.25.jar" 
-            mvn_uri="mvn:org.talend.libraries/slf4j-log4j12-1.7.25/6.0.0"/>
-        <libraryNeeded
-            context="plugin:org.talend.libraries"
-            id="slf4j-api-1.7.25.jar"
-            name="slf4j-api-1.7.25.jar" 
-            mvn_uri="mvn:org.slf4j/slf4j-api/1.7.25"/>
-        <libraryNeeded
             context="plugin:net.sf.jopt-simple"
             id="jopt-simple-5.0.4.jar"
             name="jopt-simple-5.0.4.jar" 
@@ -152,8 +126,8 @@
                 name="KAFKA-CLIENT-LIB-2_10-0_8_2_0">
             <library id="kafka-clients-0.8.2.0.jar"/>
             <library id="log4j-1.2.16.jar"/>
-            <library id="slf4j-api-1.7.6.jar"/>
-            <library id="slf4j-log4j12-1.6.1.jar"/>
+            <library id="slf4j-api-1.8.0-beta4.jar"/>
+            <library id="slf4j-log4j12-1.8.0-beta4.jar"/>
         </libraryNeededGroup>
         
         <!-- Kafka 0.9.0.1 group (tKafkaInput) -->    
@@ -171,8 +145,8 @@
             <library id="zkclient-0.7.jar"/>
             <library id="zookeeper-3.4.6.jar"/>
             <library id="log4j-1.2.17.jar"/>
-            <library id="slf4j-api-1.7.6.jar"/>
-            <library id="slf4j-log4j12-1.7.6.jar"/>
+            <library id="slf4j-api-1.8.0-beta4.jar"/>
+            <library id="slf4j-log4j12-1.8.0-beta4.jar"/>
         </libraryNeededGroup>
         
         <!-- Kafka 0.9.0.1 client group (tKafkaOutput) -->
@@ -182,8 +156,8 @@
                 name="KAFKA-CLIENT-LIB-2_10-0_9_0_1">
             <library id="kafka-clients-0.9.0.1.jar"/>
             <library id="log4j-1.2.17.jar"/>
-            <library id="slf4j-api-1.7.6.jar"/>
-            <library id="slf4j-log4j12-1.7.6.jar"/>
+            <library id="slf4j-api-1.8.0-beta4.jar"/>
+            <library id="slf4j-log4j12-1.8.0-beta4.jar"/>
         </libraryNeededGroup>
         
         <!-- Kafka 0.10.0.1 group (tKafkaInput) -->    
@@ -201,8 +175,8 @@
             <library id="zkclient-0.8.jar"/>
             <library id="zookeeper-3.4.6.jar"/>
             <library id="log4j-1.2.17.jar"/>
-            <library id="slf4j-api-1.7.21.jar"/>
-            <library id="slf4j-log4j12-1.7.21.jar"/>
+            <library id="slf4j-api-1.8.0-beta4.jar"/>
+            <library id="slf4j-log4j12-1.8.0-beta4.jar"/>
         </libraryNeededGroup>
         
         <!-- Kafka 0.10.0.1 client group (tKafkaOutput) -->
@@ -212,8 +186,8 @@
                 name="KAFKA-CLIENT-LIB-2_10-0_10_0_1">
             <library id="kafka-clients-0.10.0.1.jar"/>
             <library id="log4j-1.2.17.jar"/>
-            <library id="slf4j-api-1.7.21.jar"/>
-            <library id="slf4j-log4j12-1.7.21.jar"/>
+            <library id="slf4j-api-1.8.0-beta4.jar"/>
+            <library id="slf4j-log4j12-1.8.0-beta4.jar"/>
         </libraryNeededGroup>
         
         <!-- Kafka 1.1.0 group (tKafkaInput) -->    
@@ -235,8 +209,8 @@
             <library id="zkclient-0.10.jar"/>
             <library id="zookeeper-3.4.10.jar"/>
             <library id="log4j-1.2.17.jar"/>
-            <library id="slf4j-api-1.7.25.jar"/>
-            <library id="slf4j-log4j12-1.7.25.jar"/>
+            <library id="slf4j-api-1.8.0-beta4.jar"/>
+            <library id="slf4j-log4j12-1.8.0-beta4.jar"/>
         </libraryNeededGroup>
         
         <!-- Kafka 1.1.0 client group (tKafkaOutput) -->
@@ -246,8 +220,8 @@
                 name="KAFKA-CLIENT-LIB-2_11-1_1_0">
             <library id="kafka-clients-1.1.0.jar"/>
             <library id="log4j-1.2.17.jar"/>
-            <library id="slf4j-api-1.7.25.jar"/>
-            <library id="slf4j-log4j12-1.7.25.jar"/>
+            <library id="slf4j-api-1.8.0-beta4.jar"/>
+            <library id="slf4j-log4j12-1.8.0-beta4.jar"/>
         </libraryNeededGroup>
         
     </extension>

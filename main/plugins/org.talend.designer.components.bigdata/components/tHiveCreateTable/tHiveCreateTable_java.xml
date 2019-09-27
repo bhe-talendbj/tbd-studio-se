@@ -892,13 +892,13 @@
 				MVN="mvn:org.talend.libraries/libthrift/6.0.0"
 				UrlPath="platform:/plugin/org.talend.libraries.hadoop.mapr2/lib/libthrift.jar"
 				REQUIRED_IF="(HIVE_VERSION=='MAPR2') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
-			<IMPORT NAME="slf4j-api-1.6.1" MODULE="slf4j-api-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.6.1.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='MAPR2') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
-			<IMPORT NAME="slf4j-log4j12-1.6.1" MODULE="slf4j-log4j12-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.6.1.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='MAPR2') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
 			<IMPORT NAME="commons-logging-1.0.4.jar" MODULE="commons-logging-1.0.4.jar"
 				MVN="mvn:org.talend.libraries/commons-logging-1.0.4/6.0.0"
@@ -1001,13 +1001,13 @@
 				MVN="mvn:org.talend.libraries/libthrift-0.9.0/6.0.0"
 				UrlPath="platform:/plugin/org.talend.libraries.hadoop.hdp.1.2/lib/libthrift-0.9.0.jar"
 				REQUIRED_IF="(HIVE_VERSION=='MAPR212' AND (USE_EXISTING_CONNECTION == 'false') AND (DISTRIBUTION!='CUSTOM'))" />
-			<IMPORT NAME="slf4j-api-1.6.1" MODULE="slf4j-api-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.6.1.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='MAPR212' AND (USE_EXISTING_CONNECTION == 'false') AND (DISTRIBUTION!='CUSTOM'))" />
-			<IMPORT NAME="slf4j-log4j12-1.6.1" MODULE="slf4j-log4j12-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.6.1.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='MAPR212' AND (USE_EXISTING_CONNECTION == 'false') AND (DISTRIBUTION!='CUSTOM'))" />
 			<IMPORT NAME="commons-logging-1.0.4.jar" MODULE="commons-logging-1.0.4.jar"
 				MVN="mvn:org.talend.libraries/commons-logging-1.0.4/6.0.0"
@@ -1113,13 +1113,13 @@
 				MVN="mvn:org.talend.libraries/libthrift-0.9.0/6.0.0"
 				UrlPath="platform:/plugin/org.talend.libraries.hadoop.hdp.1.2/lib/libthrift-0.9.0.jar"
 				REQUIRED_IF="(HIVE_VERSION=='MAPR213' AND (USE_EXISTING_CONNECTION == 'false') AND (DISTRIBUTION!='CUSTOM'))" />
-			<IMPORT NAME="slf4j-api-1.6.1" MODULE="slf4j-api-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.6.1.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='MAPR213' AND (USE_EXISTING_CONNECTION == 'false') AND (DISTRIBUTION!='CUSTOM'))" />
-			<IMPORT NAME="slf4j-log4j12-1.6.1" MODULE="slf4j-log4j12-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.6.1.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='MAPR213' AND (USE_EXISTING_CONNECTION == 'false') AND (DISTRIBUTION!='CUSTOM'))" />
 			<IMPORT NAME="commons-logging-1.0.4.jar" MODULE="commons-logging-1.0.4.jar"
 				MVN="mvn:org.talend.libraries/commons-logging-1.0.4/6.0.0"
@@ -1220,13 +1220,13 @@
 				MVN="mvn:org.talend.libraries/libthrift-0.9.0/6.0.0"
 				UrlPath="platform:/plugin/org.talend.libraries.hadoop.hdp.1.2/lib/libthrift-0.9.0.jar"
 				REQUIRED_IF="(HIVE_VERSION=='MAPR301' AND (USE_EXISTING_CONNECTION == 'false') AND (DISTRIBUTION!='CUSTOM'))" />
-			<IMPORT NAME="slf4j-api-1.6.1" MODULE="slf4j-api-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.6.1.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='MAPR301' AND (USE_EXISTING_CONNECTION == 'false') AND (DISTRIBUTION!='CUSTOM'))" />
-			<IMPORT NAME="slf4j-log4j12-1.6.1" MODULE="slf4j-log4j12-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.6.1.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='MAPR301' AND (USE_EXISTING_CONNECTION == 'false') AND (DISTRIBUTION!='CUSTOM'))" />
 			<IMPORT NAME="commons-logging-1.0.4.jar" MODULE="commons-logging-1.0.4.jar"
 				MVN="mvn:org.talend.libraries/commons-logging-1.0.4/6.0.0"
@@ -1335,13 +1335,13 @@
 				MVN="mvn:org.talend.libraries/libthrift-0.9.0/6.0.0"
 				UrlPath="platform:/plugin/org.talend.libraries.hadoop.hdp.1.2/lib/libthrift-0.9.0.jar"
 				REQUIRED_IF="(HIVE_VERSION=='MAPR310' AND (USE_EXISTING_CONNECTION == 'false') AND (DISTRIBUTION!='CUSTOM'))" />
-			<IMPORT NAME="slf4j-api-1.6.1" MODULE="slf4j-api-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.6.1.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='MAPR310' AND (USE_EXISTING_CONNECTION == 'false') AND (DISTRIBUTION!='CUSTOM'))" />
-			<IMPORT NAME="slf4j-log4j12-1.6.1" MODULE="slf4j-log4j12-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.6.1.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='MAPR310' AND (USE_EXISTING_CONNECTION == 'false') AND (DISTRIBUTION!='CUSTOM'))" />
 			<IMPORT NAME="commons-logging-1.0.4.jar" MODULE="commons-logging-1.0.4.jar"
 				MVN="mvn:org.talend.libraries/commons-logging-1.0.4/6.0.0"
@@ -1600,14 +1600,14 @@
 				MVN="mvn:org.talend.libraries/commons-collections-3.2.1/6.0.0"
 				UrlPath="platform:/plugin/org.talend.libraries.apache.common/lib/commons-collections-3.2.1.jar"
 				REQUIRED_IF="(DISTRIBUTION!='CUSTOM') AND (HIVE_VERSION=='APACHE_2_4_0_EMR_0_13_1') AND (USE_EXISTING_CONNECTION == 'false')" />
-			<IMPORT NAME="slf4j-api-1.7.5.jar" MODULE="slf4j-api-1.7.5.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.7.5/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.7.5.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4.jar" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(DISTRIBUTION!='CUSTOM') AND (HIVE_VERSION=='APACHE_2_4_0_EMR_0_13_1') AND (USE_EXISTING_CONNECTION == 'false')" />
 
-			<IMPORT NAME="slf4j-log4j12-1.7.5.jar" MODULE="slf4j-log4j12-1.7.5.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.7.5/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.7.5.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4.jar" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(DISTRIBUTION!='CUSTOM') AND (HIVE_VERSION=='APACHE_2_4_0_EMR_0_13_1') AND (USE_EXISTING_CONNECTION == 'false')" />
 			<IMPORT NAME="log4j-1.2.17" MODULE="log4j-1.2.17.jar"
 				MVN="mvn:log4j/log4j/1.2.17"
@@ -1756,14 +1756,14 @@
 				MVN="mvn:org.talend.libraries/commons-collections-3.2.1/6.0.0"
 				UrlPath="platform:/plugin/org.talend.libraries.apache.common/lib/commons-collections-3.2.1.jar"
 				REQUIRED_IF="(DISTRIBUTION!='CUSTOM') AND (USE_EXISTING_CONNECTION == 'false') AND (HIVE_VERSION=='APACHE_2_4_0_EMR')" />
-			<IMPORT NAME="slf4j-api-1.7.5.jar" MODULE="slf4j-api-1.7.5.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.7.5/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.7.5.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4.jar" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(DISTRIBUTION!='CUSTOM') AND (USE_EXISTING_CONNECTION == 'false') AND (HIVE_VERSION=='APACHE_2_4_0_EMR')" />
 
-			<IMPORT NAME="slf4j-log4j12-1.7.5.jar" MODULE="slf4j-log4j12-1.7.5.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.7.5/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.7.5.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4.jar" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(DISTRIBUTION!='CUSTOM') AND (USE_EXISTING_CONNECTION == 'false') AND (HIVE_VERSION=='APACHE_2_4_0_EMR')" />
 			<IMPORT NAME="log4j-1.2.17" MODULE="log4j-1.2.17.jar"
 				MVN="mvn:log4j/log4j/1.2.17"
@@ -1863,9 +1863,9 @@
 				MVN="mvn:org.talend.libraries/log4j-1.2.15/6.0.0"
 				UrlPath="platform:/base/plugins/org.apache.log4j_1.2.15.v201012070815.jar"
 				REQUIRED_IF="(HIVE_VERSION=='APACHE_1_0_0' OR HIVE_VERSION=='APACHE_1_0_3_EMR') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
-			<IMPORT NAME="slf4j-api-1.6.1.jar" MODULE="slf4j-api-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.6.1.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4.jar" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='APACHE_1_0_0' OR HIVE_VERSION=='APACHE_1_0_3_EMR') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
 			<IMPORT NAME="antlr-runtime-3.0.1.jar" MODULE="antlr-runtime-3.0.1.jar"
 				MVN="mvn:org.talend.libraries/antlr-runtime-3.0.1/6.0.0"
@@ -1895,9 +1895,9 @@
 				MVN="mvn:commons-lang/commons-lang/2.6"
 				UrlPath="platform:/base/plugins/org.apache.commons.lang_2.6.0.v201404270220.jar"
 				REQUIRED_IF="(HIVE_VERSION=='APACHE_1_0_0' OR HIVE_VERSION=='APACHE_1_0_3_EMR') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
-			<IMPORT NAME="slf4j-log4j12-1.6.1.jar" MODULE="slf4j-log4j12-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.6.1.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4.jar" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='APACHE_1_0_0' OR HIVE_VERSION=='APACHE_1_0_3_EMR') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
 			<IMPORT NAME="jackson-core-asl-1.9.14-TALEND.jar" MODULE="jackson-core-asl-1.9.14-TALEND.jar"
 				MVN="mvn:org.codehaus.jackson/jackson-core-asl/1.9.14-TALEND"
@@ -1992,13 +1992,13 @@
 				UrlPath="platform:/plugin/org.talend.libraries.apache/lib/log4j-1.2.16.jar"
 				REQUIRED_IF="(HIVE_VERSION=='HDP_1_2') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'"
 				BundleID="" />
-			<IMPORT NAME="slf4j-api-1.6.1.jar" MODULE="slf4j-api-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.6.1.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4.jar" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='HDP_1_2') AND (DISTRIBUTION!='CUSTOM')" />
-			<IMPORT NAME="slf4j-log4j12-1.6.1.jar" MODULE="slf4j-log4j12-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.6.1.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4.jar" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='HDP_1_2') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
 			<IMPORT NAME="jackson-core-asl-1.9.14-TALEND.jar" MODULE="jackson-core-asl-1.9.14-TALEND.jar"
 				MVN="mvn:org.codehaus.jackson/jackson-core-asl/1.9.14-TALEND"
@@ -2088,13 +2088,13 @@
 				UrlPath="platform:/plugin/org.talend.libraries.apache/lib/log4j-1.2.16.jar"
 				REQUIRED_IF="(HIVE_VERSION=='HDP_1_3') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'"
 				BundleID="" />
-			<IMPORT NAME="slf4j-api-1.6.1.jar" MODULE="slf4j-api-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.6.1.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4.jar" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='HDP_1_3') AND (DISTRIBUTION!='CUSTOM')" />
-			<IMPORT NAME="slf4j-log4j12-1.6.1.jar" MODULE="slf4j-log4j12-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.6.1.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4.jar" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='HDP_1_3') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
 			<IMPORT NAME="jackson-core-asl-1.9.14-TALEND.jar" MODULE="jackson-core-asl-1.9.14-TALEND.jar"
 				MVN="mvn:org.codehaus.jackson/jackson-core-asl/1.9.14-TALEND"
@@ -2135,13 +2135,13 @@
 				MVN="mvn:log4j/log4j/1.2.16"
 				UrlPath="platform:/plugin/org.talend.libraries.apache/lib/log4j-1.2.16.jar"
 				REQUIRED_IF="(HIVE_VERSION=='Cloudera_CDH4') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
-			<IMPORT NAME="slf4j-api-1.6.1.jar" MODULE="slf4j-api-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.6.1.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4.jar" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='Cloudera_CDH4') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
-			<IMPORT NAME="slf4j-log4j12-1.6.1.jar" MODULE="slf4j-log4j12-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.6.1.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4.jar" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='Cloudera_CDH4') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
 			<IMPORT NAME="hadoop-common-2.0.0-cdh4.0.1.jar" MODULE="hadoop-common-2.0.0-cdh4.0.1.jar"
 				MVN="mvn:org.talend.libraries/hadoop-common-2.0.0-cdh4.0.1/6.0.0"
@@ -2261,13 +2261,13 @@
 				UrlPath="platform:/plugin/org.talend.libraries.apache/lib/log4j-1.2.16.jar"
 				REQUIRED_IF="(HIVE_VERSION=='Cloudera_CDH4_YARN') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'"
 				BundleID="" />
-			<IMPORT NAME="slf4j-api-1.6.1.jar" MODULE="slf4j-api-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.6.1.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4.jar" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='Cloudera_CDH4_YARN') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
-			<IMPORT NAME="slf4j-log4j12-1.6.1.jar" MODULE="slf4j-log4j12-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.6.1.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4.jar" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='Cloudera_CDH4_YARN') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
 			<IMPORT NAME="hadoop-auth-2.0.0-cdh4.4.0.jar" MODULE="hadoop-auth-2.0.0-cdh4.4.0.jar"
 				MVN="mvn:org.talend.libraries/hadoop-auth-2.0.0-cdh4.4.0/6.0.0"
@@ -2426,13 +2426,13 @@
 				UrlPath="platform:/plugin/org.talend.libraries.apache/lib/log4j-1.2.17.jar"
 				REQUIRED_IF="(HIVE_VERSION=='Cloudera_CDH5') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'"
 				BundleID="" />
-			<IMPORT NAME="slf4j-api-1.7.5.jar" MODULE="slf4j-api-1.7.5.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.7.5/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.7.5.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4.jar" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='Cloudera_CDH5') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
-			<IMPORT NAME="slf4j-log4j12-1.7.5.jar" MODULE="slf4j-log4j12-1.7.5.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.7.5/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.7.5.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4.jar" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='Cloudera_CDH5') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
 			<IMPORT NAME="hadoop-hdfs-2.3.0-cdh5.0.4.jar" MODULE="hadoop-hdfs-2.3.0-cdh5.0.4.jar"
 				MVN="mvn:org.talend.libraries/hadoop-hdfs-2.3.0-cdh5.0.4/6.0.0"
@@ -2638,13 +2638,13 @@
 				UrlPath="platform:/plugin/org.talend.libraries.apache/lib/log4j-1.2.16.jar"
 				REQUIRED_IF="(HIVE_VERSION=='PIVOTAL_HD_1_0_1') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'"
 				BundleID="" />
-			<IMPORT NAME="slf4j-api-1.6.1.jar" MODULE="slf4j-api-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.6.1.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4.jar" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='PIVOTAL_HD_1_0_1') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
-			<IMPORT NAME="slf4j-log4j12-1.6.1.jar" MODULE="slf4j-log4j12-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.6.1.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4.jar" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='PIVOTAL_HD_1_0_1') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
 			<IMPORT NAME="hadoop-auth-2.0.2-alpha-gphd-2.0.1.0.jar"
 				MODULE="hadoop-auth-2.0.2-alpha-gphd-2.0.1.0.jar"
@@ -2799,13 +2799,13 @@
 				UrlPath="platform:/plugin/org.talend.libraries.apache/lib/log4j-1.2.17.jar"
 				REQUIRED_IF="(HIVE_VERSION=='PIVOTAL_HD_2_0') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'"
 				BundleID="" />
-			<IMPORT NAME="slf4j-api-1.6.1.jar" MODULE="slf4j-api-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.6.1.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4.jar" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='PIVOTAL_HD_2_0') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
-			<IMPORT NAME="slf4j-log4j12-1.6.1.jar" MODULE="slf4j-log4j12-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.6.1.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4.jar" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='PIVOTAL_HD_2_0') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
 			<IMPORT NAME="hadoop-hdfs-2.2.0-gphd-3.0.0.0.jar" MODULE="hadoop-hdfs-2.2.0-gphd-3.0.0.0.jar"
 				MVN="mvn:org.talend.libraries/hadoop-hdfs-2.2.0-gphd-3.0.0.0/6.0.0"
@@ -2969,13 +2969,13 @@
 				UrlPath="platform:/plugin/org.talend.libraries.apache/lib/log4j-1.2.17.jar"
 				REQUIRED_IF="(HIVE_VERSION=='HDP_2_0') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'"
 				BundleID="" />
-			<IMPORT NAME="slf4j-api-1.6.1.jar" MODULE="slf4j-api-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.6.1.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4.jar" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='HDP_2_0') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
-			<IMPORT NAME="slf4j-log4j12-1.6.1.jar" MODULE="slf4j-log4j12-1.6.1.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.6.1/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.6.1.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4.jar" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='HDP_2_0') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
 			<IMPORT NAME="hadoop-hdfs-2.2.0.2.0.6.0-76.jar" MODULE="hadoop-hdfs-2.2.0.2.0.6.0-76.jar"
 				MVN="mvn:org.talend.libraries/hadoop-hdfs-2.2.0.2.0.6.0-76/6.0.0"
@@ -3133,13 +3133,13 @@
 				UrlPath="platform:/plugin/org.talend.libraries.apache/lib/log4j-1.2.17.jar"
 				REQUIRED_IF="(HIVE_VERSION=='HDP_2_1') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'"
 				BundleID="" />
-			<IMPORT NAME="slf4j-api-1.7.5.jar" MODULE="slf4j-api-1.7.5.jar"
-				MVN="mvn:org.talend.libraries/slf4j-api-1.7.5/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.7.5.jar"
+			<IMPORT NAME="slf4j-api-1.8.0-beta4.jar" MODULE="slf4j-api-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-api/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-api-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='HDP_2_1') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
-			<IMPORT NAME="slf4j-log4j12-1.7.5.jar" MODULE="slf4j-log4j12-1.7.5.jar"
-				MVN="mvn:org.talend.libraries/slf4j-log4j12-1.7.5/6.0.0"
-				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.7.5.jar"
+			<IMPORT NAME="slf4j-log4j12-1.8.0-beta4.jar" MODULE="slf4j-log4j12-1.8.0-beta4.jar"
+				MVN="mvn:org.slf4j/slf4j-log4j12/1.8.0-beta4"
+				UrlPath="platform:/plugin/org.talend.libraries.slf4j/lib/slf4j-log4j12-1.8.0-beta4.jar"
 				REQUIRED_IF="(HIVE_VERSION=='HDP_2_1') and (USE_EXISTING_CONNECTION == 'false') AND DISTRIBUTION!='CUSTOM'" />
 			<IMPORT NAME="hadoop-hdfs-2.4.0.2.1.1.0-385.jar" MODULE="hadoop-hdfs-2.4.0.2.1.1.0-385.jar"
 				MVN="mvn:org.talend.libraries/hadoop-hdfs-2.4.0.2.1.1.0-385/6.0.0"
