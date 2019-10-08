@@ -7,4 +7,6 @@ classes/
 .idea
 *.iml
 lib/
+/update-site
+update-site*.zip
 
