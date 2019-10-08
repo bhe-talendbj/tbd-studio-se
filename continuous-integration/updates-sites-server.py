@@ -1,16 +1,18 @@
+#!/usr/bin/python
 import argparse
 import os.path
 import sys
 import time
 import threading
-from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+from http.server import HTTPServer, SimpleHTTPRequestHandler
 
 
 class HttpServerMain:
 
     def __init__(self):
-        self.server = ThreadingHTTPServer(('0.0.0.0', 8080), SimpleHTTPRequestHandler)
+        self.server = HTTPServer(('0.0.0.0', 8080), SimpleHTTPRequestHandler)
         self._continue = True
+        self.server.timeout = 5
 
     def run(self):
         while self._continue:
@@ -26,12 +28,15 @@ if __name__ == '__main__':
     parser.add_argument('file', type=str, help='file to check for liveness')
     args = parser.parse_args()
     print("server is checking for liveness file %s" % args.file)
-
     httpServerMain = HttpServerMain()
     httpserverThread = threading.Thread(target=httpServerMain.run)
     httpserverThread.start()
-    while os.path.isfile(args.file):
-        time.sleep(10)
-    print("file is not existing anymore. stopping process")
+    try:
+        while os.path.isfile(args.file):
+            time.sleep(10)
+    except KeyboardInterrupt:
+        print("process cancelled")
+    print("file is not existing anymore. stopping http server process")
     httpServerMain.stop()
-    sys.exit(0)
+    print("ending process")
+    quit()

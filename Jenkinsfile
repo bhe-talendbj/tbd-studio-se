@@ -7,7 +7,7 @@
  *
  */
 
-def podLabel = "dakar"
+def podLabel = "tbd-studio-se"
 
 pipeline {
 
@@ -22,7 +22,7 @@ pipeline {
     agent {
         kubernetes {
             label podLabel
-            yamlFile 'agentPodTemplate.yaml'
+            yamlFile 'podTemplate.yaml'
             activeDeadlineSeconds 60
         }
     }
@@ -37,7 +37,7 @@ pipeline {
 
     stages {
 
-        stage('Check Last git author') {
+        stage('Check Last git author is not CI') {
             // inject a var for skipping stages if the last user is the one used for the the 'release build'
             steps {
                 script {
@@ -52,7 +52,7 @@ pipeline {
             }
         }
 
-        stage('Build Talend Opensource Big Data Studio  (tbd-studio-se)') {
+        stage('Build Talend Opensource Big Data Studio plugins (tbd-studio-se)') {
             when {
                 environment name: 'CONTINUE_BUILD', value: 'true'
             }
@@ -78,39 +78,86 @@ pipeline {
                     }
                 }
 
-                stage('download update-site') {
+                stage('sanity check before build') {
                     steps {
-                        container('python3') {
-                            withCredentials([usernamePassword(credentialsId: 'newbuild-credentials', passwordVariable: 'PASSWORD', usernameVariable: 'LOGIN')]) {
-                                sh '''
-                                    python ./continuous-integration/download-last-p2-repository.py -l %LOGIN% -p %PASSWORD% -e update-site
+                        container('maven3') {
+                            sh '''
+                                pip install javaproperties
+                                python ./tools/sanity-check.py
                                 '''
-                            }
                         }
                     }
                 }
 
-                parallel {
-
-                    stage('run local update site') {
-                        steps {
-                            container('python3') {
-                                sh 'touch running.lock'
-                                sh 'cd update-site && python ../continuous-integration/updates-sites-server.py ../running.lock'
-                            }
+                stage('maven initialization') {
+                    steps {
+                        container('maven3') {
+                            sh '''
+                                mkdir ~/.m2
+                                cp continuous-integration/settings.xml ~/.m2/settings.xml
+                                '''
                         }
                     }
+                }
 
-                    stage('test & package plugins') {
-                        steps {
-                            container('maven3') {
-                                sh 'mvn -f pom-quick-build.xml -Ptbd-studio-se-quick-build  -Dmaven.test.failure.ignore=true integration-test'
-                                sh 'rm -f running.lock'
+                stage('main build') {
+
+                    parallel {
+
+                        stage('run local proxy update site') {
+                            steps {
+                                container('python3') {
+                                    withCredentials([usernamePassword(credentialsId: 'nexus-artifacts-zl-credentials', passwordVariable: 'NEXUS_PASSWORD', usernameVariable: 'NEXUS_LOGIN')]) {
+                                        sh 'touch running.lock'
+                                        sh 'python3 continuous-integration/proxy-update-site.py running.lock -u $NEXUS_LOGIN -p $NEXUS_PASSWORD'
+                                    }
+                                }
                             }
                         }
-                        post {
-                            always {
-                                junit 'junit.xml'
+
+                        stage('run maven') {
+
+                            stages {
+
+                                stage('wait for proxy server') {
+                                   steps {
+                                       container('maven3') {
+                                           sh 'sleep 5'
+                                       }
+                                   }
+                                }
+
+                                stage('package plugins') {
+                                    steps {
+                                        container('maven3') {
+                                            sh 'mvn -f pom-quick-build.xml -Ptbd-studio-se-quick-build clean package'
+                                        }
+                                    }
+                                    post {
+                                        success {
+                                            archiveArtifacts artifacts: 'tbd-studio-se-eclipse-repository/target/*.zip', onlyIfSuccessful: true
+                                        }
+                                    }
+                                }
+                                stage('test plugins') {
+                                    steps {
+                                        container('maven3') {
+                                            sh 'mvn -f pom-quick-build.xml -Ptbd-studio-se-quick-build  -Dmaven.test.failure.ignore=true integration-test'
+                                        }
+                                    }
+                                    post {
+                                        always {
+                                            junit 'test/plugins/*/target/surefire-reports/TEST-*.xml'
+                                        }
+                                    }
+                                }
+                            }
+                            post {
+                                always {
+                                    container('maven3') {
+                                        sh 'rm -f running.lock'
+                                    }
+                                }
                             }
                         }
                     }

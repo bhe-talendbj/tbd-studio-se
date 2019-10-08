@@ -9,4 +9,8 @@ classes/
 lib/
 /update-site
 update-site*.zip
+proxy.txt
+running.lock
+build.log
+tbd-target-platform-configuration/tbd-target-platform-configuration.target.template
 

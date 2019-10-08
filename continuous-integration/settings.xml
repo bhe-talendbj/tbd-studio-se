@@ -1,0 +1,11 @@
+<settings>
+    <mirrors>
+        <mirror>
+            <!--This sends everything else to /public -->
+            <id>talend-proxy</id>
+            <name>talend central</name>
+            <url>https://artifacts-zl.talend.com/nexus/content/repositories/public/</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+    </mirrors>
+</settings>

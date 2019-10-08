@@ -9,6 +9,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.talend.studio</groupId>
-    <artifactId>tbd-target-platform-configuration</artifactId>
-    <packaging>eclipse-target-definition</packaging>
+    <artifactId>tbd-studio-se-eclipse-repository</artifactId>
+    <packaging>eclipse-repository</packaging>
 </project>

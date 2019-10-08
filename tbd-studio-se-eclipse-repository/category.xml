@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+
+    <feature id="org.talend.hadoop.distribution.feature">
+        <category name="org.talend.hadoop.distribution.category"/>
+    </feature>
+
+    <feature id="org.talend.tos.bigdata.libraries.feature">
+        <category name="org.talend.tos.bigdata.libraries.category"/>
+    </feature>
+
+    <feature id="org.talend.tos.bigdata.feature">
+        <category name="org.talend.bigdata.components.category"/>
+    </feature>
+
+    <feature id="org.talend.rcp.branding.tos.bigdata.feature">
+        <category name="org.talend.bigdata.components.category"/>
+    </feature>
+
+    <category-def name="org.talend.bigdata.components.category" label="hadoop ">
+        <description>
+            Talend Components running inside Talend bigdata studio
+        </description>
+    </category-def>
+
+    <!-- hadoop distributions -->
+    <category-def name="org.talend.hadoop.distribution.category" label="hadoop distributions">
+        <description>
+            Talend supported distributions
+        </description>
+    </category-def>
+
+    <!-- components dependencies -->
+    <category-def name="org.talend.bigdata.libraries.category" label="hadoop components dependencies">
+        <description>
+            Libraries needed for some feature of Talend bigdata studio
+        </description>
+    </category-def>
+
+</site>

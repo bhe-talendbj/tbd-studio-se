@@ -2,6 +2,7 @@ import argparse
 import javaproperties
 import os
 import xml.etree.ElementTree as xml
+import sys
 
 COLOR_RED = '\033[1;31m'
 COLOR_YELLOW = '\033[1;33m'
@@ -97,7 +98,8 @@ def check_consistency(plugin_path):
             (output_directory_in_pom == output_directory_on_filesystem or output_directory_on_filesystem is None):
         print("INFO : %s is %s (%s)" % (
             yellow(plugin_name(plugin_path)), green('consistent'), yellow(source_directory_in_pom)))
-    # case of libraries plugin without any java source directory (just lib import)
+        # case of libraries plugin without any java source directory (just lib import)
+        return 0
     elif source_directory_on_filesystem is None and \
             source_directory_in_properties is None and \
             source_directory_in_pom == DEFAULT_MAVEN_SOURCE_DIR and \
@@ -106,12 +108,14 @@ def check_consistency(plugin_path):
             (output_directory_in_pom == output_directory_on_filesystem or output_directory_on_filesystem is None):
         print("INFO : %s is %s (library plugin, no source directory)" % (
             yellow(plugin_name(plugin_path)), green('consistent')))
+        return 0
     else:
         print("ERROR : %s is %s" % (yellow(plugin_name(plugin_path)), red('misconfigured')))
         print("ERROR : sources : system: %6s, pom: %6s, properties: %6s" % (
             source_directory_on_filesystem, source_directory_in_pom, source_directory_in_properties))
         print("ERROR : output  : system: %6s, pom: %6s, properties: %6s" % (
             output_directory_on_filesystem, output_directory_in_pom, output_directory_in_properties))
+        return 1
 
 
 def sanity_check(directories):
@@ -128,8 +132,10 @@ def sanity_check(directories):
         print("found %s plugins" % yellow(nb_plugins))
     else:
         print("found %s plugins" % red(nb_plugins))
+    errors = 0
     for plugin_path in plugins:
-        check_consistency(plugin_path)
+        errors += check_consistency(plugin_path)
+    return errors
 
 
 if __name__ == '__main__':
@@ -137,7 +143,11 @@ if __name__ == '__main__':
         description='check consistency between directory structure, pom.xml and build.properties')
     parser.add_argument('-d', '--directories', dest='directories', type=str,
                         help='list of directory where plugins are located',
-                        default='../main/plugins:../test/plugins')
+                        default='main/plugins:test/plugins')
     args = parser.parse_args()
     plugin_directories = args.directories.split(':')
-    sanity_check(plugin_directories)
+    errors = sanity_check(plugin_directories)
+    if errors != 0:
+        print("%sProject is not correctly configured (%s %s found).%s" % (
+        COLOR_RED, errors, 'error' if errors == 1 else 'errors', END_COLOR))
+    sys.exit(errors)
