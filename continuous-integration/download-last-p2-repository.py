@@ -206,13 +206,17 @@ def found_current_site_version(version, login, password, studio):
     print("login to Talend studio download site (%s%s/builds%s)" % (COLOR_BLUE, CI_SERVER, END_COLOR))
     login_to_server(login, password)
     versions = read_versions(root_url, prefix)
-    versions.sort()
-    current_version = versions[-1]
-    if current_version.endswith('backup'):
-        current_version = versions[-2]
-    print('found latest version is %s%s%s' % (COLOR_YELLOW, current_version, END_COLOR))
-    download_url = calculate_download_url(root_url, current_version, studio)
-    return download_url, current_version
+    if len(versions) == 0:
+        print('no version found for %s' % version)
+        quit()
+    else:
+        versions.sort()
+        current_version = versions[-1]
+        if current_version.endswith('backup'):
+            current_version = versions[-2]
+        print('found latest version is %s%s%s' % (COLOR_YELLOW, current_version, END_COLOR))
+        download_url = calculate_download_url(root_url, current_version, studio)
+        return download_url, current_version
 
 
 def download_if_needed(version, login, password, studio):
