@@ -13,18 +13,85 @@
         <category name="org.talend.bigdata.components.category"/>
     </feature>
 
-    <feature id="org.talend.rcp.branding.tos.bigdata.feature">
-        <category name="org.talend.bigdata.components.category"/>
-    </feature>
+    <bundle id="org.talend.demo.bigdata.ce">
+        <category name="org.talend.bigdata.demo.category"/>
+    </bundle>
 
-    <category-def name="org.talend.bigdata.components.category" label="hadoop ">
+
+    <bundle id="org.talend.demo.bigdata.ce.nl">
+        <category name="org.talend.bigdata.demo.category"/>
+    </bundle>
+
+
+    <bundle id="org.talend.designer.maven.tos">
+        <category name="org.talend.bigdata.components.category"/>
+    </bundle>
+
+
+    <bundle id="org.talend.presentation.onboarding">
+        <category name="org.talend.bigdata.onboarding.category"/>
+    </bundle>
+
+
+    <bundle id="org.talend.presentation.onboarding.nl">
+        <category name="org.talend.bigdata.onboarding.category"/>
+    </bundle>
+
+
+    <bundle id="org.talend.presentation.onboarding.resource">
+        <category name="org.talend.bigdata.onboarding.category"/>
+    </bundle>
+
+
+    <bundle id="org.talend.presentation.onboarding.resource.nl">
+        <category name="org.talend.bigdata.onboarding.category"/>
+    </bundle>
+
+
+    <bundle id="org.talend.presentation.onboarding.resource.tos">
+        <category name="org.talend.bigdata.onboarding.category"/>
+    </bundle>
+
+
+    <bundle id="org.talend.presentation.onboarding.resource.tos.nl">
+        <category name="org.talend.bigdata.onboarding.category"/>
+    </bundle>
+
+
+    <bundle id="org.talend.rcp.branding.tos.bigdata">
+        <category name="org.talend.bigdata.components.category"/>
+    </bundle>
+
+
+    <bundle id="org.talend.themes.css.talend">
+        <category name="org.talend.bigdata.components.category"/>
+    </bundle>
+
+
+    <!--    <feature id="org.talend.rcp.branding.tos.bigdata.feature">-->
+    <!--        <category name="org.talend.bigdata.components.category"/>-->
+    <!--    </feature>-->
+
+    <category-def name="org.talend.hadoop.demo.category" label="bigdata demo">
+        <description>
+            Talend Bigdata Demo
+        </description>
+    </category-def>
+
+    <category-def name="org.talend.hadoop.onboarding.category" label="bigdata onboarding">
+        <description>
+            Talend Bigdata Onboarding
+        </description>
+    </category-def>
+
+    <category-def name="org.talend.bigdata.components.category" label="bigdata hadoop components">
         <description>
             Talend Components running inside Talend bigdata studio
         </description>
     </category-def>
 
     <!-- hadoop distributions -->
-    <category-def name="org.talend.hadoop.distribution.category" label="hadoop distributions">
+    <category-def name="org.talend.hadoop.distribution.category" label="bigdata hadoop distributions">
         <description>
             Talend supported distributions
         </description>

@@ -118,7 +118,8 @@ def update_target_platform(port):
     with open(template_path, 'r') as template_file, open(target_path, 'w') as target_file:
         for line in template_file.readlines():
             target_file.write(
-                line if '<repository location=' not in line else ('			<repository location="%s/"/>\n' % url))
+                line if '<repository location="http://localhost:8080/"' not in line else (
+                            '			<repository location="%s/"/>\n' % url))
 
 
 if __name__ == '__main__':

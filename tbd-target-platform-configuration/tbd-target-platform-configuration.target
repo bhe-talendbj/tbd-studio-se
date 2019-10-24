@@ -3,6 +3,61 @@
 <target name="Talend Update Site">
 	<locations>
 		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="https://artifacts-zl.talend.com/nexus/content/unzip/TalendP2UnzipOpenSourceSnapshot/org/talend/studio/talend-tos-p2-repo/7.3.1-SNAPSHOT/talend-tos-p2-repo-7.3.1-SNAPSHOT.zip-unzip/"/>
+			<unit id="org.talend.babel.all.tos.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.camel.core.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.camel.designer.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.camel.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.commons.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.core.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.dataquality.se.test.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.designer.business.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.designer.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.esb.tooling.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.esb.tooling.rs.provider.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.esb.tooling.test.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.esb.tooling.ws.consumer.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.esb.tooling.ws.provider.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.esbstandard.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.fragment.jars.common.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.fragment.jars.di.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.fragment.jars.dq.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.hadoop.distribution.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.help.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.jdt.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.libraries.jdbc.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.m2e.feature.feature.group" version="0.0.0"/>
+			<!--<unit id="org.talend.mdm.tom.test.feature.feature.group" version="0.0.0"/>-->
+			<unit id="org.talend.model.migration.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.platform.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.rcp.branding.esbstandard.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.rcp.branding.top.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.rcp.branding.tos.feature.feature.group" version="0.0.0"/>
+			<!--<unit id="org.talend.rcp.branding.tos.test.feature.feature.group" version="0.0.0"/>-->
+			<unit id="org.talend.rcp.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.repository.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.repository.services.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.sbi.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.spagic.feature.feature.group" version="0.0.0"/>
+			<!--<unit id="org.talend.studio.tos.all.p2.product" version="0.0.0"/>-->
+			<!--<unit id="org.talend.tom.feature.feature.group" version="0.0.0"/>-->
+			<unit id="org.talend.top.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.top.libraries.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.tos.components.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.tos.core.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.tos.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.tos.libraries.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.update.p2.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.updates.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.utils.feature.feature.group" version="0.0.0"/>
+			<!--
+			<unit id="org.talend.bigdata.se.test.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.rcp.branding.tos.bigdata.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.tos.bigdata.feature.feature.group" version="0.0.0"/>
+			<unit id="org.talend.tos.bigdata.libraries.feature.feature.group" version="0.0.0"/>
+			-->
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 			<repository location="http://localhost:8080/"/>
 			<unit id="com.oaklandsw.transform.feature.doc7.feature.group" version="0.0.0"/>
 			<unit id="com.oaklandsw.transform.feature.examples.edi.feature.group" version="0.0.0"/>
@@ -142,6 +197,7 @@
 			<unit id="org.talend.designer.business.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.designer.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.designer.runprocess.remote.feature.feature.group" version="0.0.0"/>
+			<!--
 			<unit id="org.talend.esb.bpm.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.esb.platform.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.esb.tooling.feature.feature.group" version="0.0.0"/>
@@ -149,6 +205,7 @@
 			<unit id="org.talend.esb.tooling.ws.consumer.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.esb.tooling.ws.provider.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.esbenterprise.feature.feature.group" version="0.0.0"/>
+			-->
 			<unit id="org.talend.generic.cloud.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.generic.di.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.generic.dq.feature.feature.group" version="0.0.0"/>
@@ -158,7 +215,7 @@
 			<unit id="org.talend.jdt.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.libraries.jdbc.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.m2e.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.mdm.bos.feature.feature.group" version="0.0.0"/>
+			<!--<unit id="org.talend.mdm.bos.feature.feature.group" version="0.0.0"/>-->
 			<unit id="org.talend.metadata.bridge.ui.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.metalanguage.jobscript.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.model.migration.feature.feature.group" version="0.0.0"/>
@@ -199,68 +256,13 @@
 			<unit id="org.talend.tos.components.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.tos.core.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.tos.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.tos.libraries.feature.feature.group" version="0.0.0"/>
+			<!--<unit id="org.talend.tos.libraries.feature.feature.group" version="0.0.0"/>-->
 			<unit id="org.talend.transform.feature.spark.feature.group" version="0.0.0"/>
 			<unit id="org.talend.tup.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.update.p2.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.updates.feature.feature.group" version="0.0.0"/>
 			<unit id="org.talend.utils.feature.feature.group" version="0.0.0"/>
 			<unit id="platform-specific-feature.feature.group" version="0.0.0"/>
-		</location>
-		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-			<repository location="https://artifacts-zl.talend.com/nexus/content/unzip/TalendP2UnzipOpenSourceSnapshot/org/talend/studio/talend-tos-p2-repo/7.3.1-SNAPSHOT/talend-tos-p2-repo-7.3.1-SNAPSHOT.zip-unzip/"/>
-			<unit id="org.talend.babel.all.tos.feature.feature.group" version="0.0.0"/>			
-			<unit id="org.talend.camel.core.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.camel.designer.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.camel.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.commons.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.core.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.dataquality.se.test.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.designer.business.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.designer.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.esb.tooling.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.esb.tooling.rs.provider.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.esb.tooling.test.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.esb.tooling.ws.consumer.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.esb.tooling.ws.provider.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.esbstandard.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.fragment.jars.common.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.fragment.jars.di.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.fragment.jars.dq.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.hadoop.distribution.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.help.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.jdt.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.libraries.jdbc.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.m2e.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.mdm.tom.test.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.model.migration.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.platform.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.rcp.branding.esbstandard.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.rcp.branding.top.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.rcp.branding.tos.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.rcp.branding.tos.test.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.rcp.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.repository.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.repository.services.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.sbi.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.spagic.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.studio.tos.all.p2.product" version="0.0.0"/>
-			<unit id="org.talend.tom.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.top.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.top.libraries.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.tos.components.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.tos.core.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.tos.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.tos.libraries.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.update.p2.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.updates.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.utils.feature.feature.group" version="0.0.0"/>
-			<!--
-			<unit id="org.talend.bigdata.se.test.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.rcp.branding.tos.bigdata.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.tos.bigdata.feature.feature.group" version="0.0.0"/>
-			<unit id="org.talend.tos.bigdata.libraries.feature.feature.group" version="0.0.0"/>
-			-->
 		</location>
 	</locations>
 </target>
