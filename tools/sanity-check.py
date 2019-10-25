@@ -85,6 +85,7 @@ def get_directories_on_filesystem(plugin_path, source_directory_in_pom, output_d
 
 
 def check_consistency(plugin_path):
+    result = 0
     source_directory_in_pom, output_directory_in_pom = get_directories_in_pom(plugin_path)
     source_directory_in_properties, output_directory_in_properties = get_directories_in_properties(plugin_path)
     source_directory_on_filesystem, output_directory_on_filesystem = get_directories_on_filesystem(plugin_path,
@@ -99,7 +100,6 @@ def check_consistency(plugin_path):
         print("INFO : %s is %s (%s)" % (
             yellow(plugin_name(plugin_path)), green('consistent'), yellow(source_directory_in_pom)))
         # case of libraries plugin without any java source directory (just lib import)
-        return 0
     elif source_directory_on_filesystem is None and \
             source_directory_in_properties is None and \
             source_directory_in_pom == DEFAULT_MAVEN_SOURCE_DIR and \
@@ -108,14 +108,14 @@ def check_consistency(plugin_path):
             (output_directory_in_pom == output_directory_on_filesystem or output_directory_on_filesystem is None):
         print("INFO : %s is %s (library plugin, no source directory)" % (
             yellow(plugin_name(plugin_path)), green('consistent')))
-        return 0
     else:
         print("ERROR : %s is %s" % (yellow(plugin_name(plugin_path)), red('misconfigured')))
         print("ERROR : sources : system: %6s, pom: %6s, properties: %6s" % (
             source_directory_on_filesystem, source_directory_in_pom, source_directory_in_properties))
         print("ERROR : output  : system: %6s, pom: %6s, properties: %6s" % (
             output_directory_on_filesystem, output_directory_in_pom, output_directory_in_properties))
-        return 1
+        result = 1
+    return result
 
 
 def sanity_check(directories):
@@ -146,8 +146,8 @@ if __name__ == '__main__':
                         default='main/plugins:test/plugins')
     args = parser.parse_args()
     plugin_directories = args.directories.split(':')
-    errors = sanity_check(plugin_directories)
-    if errors != 0:
+    nb_errors = sanity_check(plugin_directories)
+    if nb_errors != 0:
         print("%sProject is not correctly configured (%s %s found).%s" % (
-        COLOR_RED, errors, 'error' if errors == 1 else 'errors', END_COLOR))
-    sys.exit(errors)
+            COLOR_RED, nb_errors, 'error' if nb_errors == 1 else 'errors', END_COLOR))
+    sys.exit(nb_errors)
