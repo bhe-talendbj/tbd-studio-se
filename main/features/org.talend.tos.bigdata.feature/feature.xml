@@ -16,6 +16,10 @@
       [Enter License Description here.]
    </license>
 
+   <includes
+         id="org.talend.help.bd.feature"
+         version="0.0.0"/>
+
    <plugin
          id="org.talend.designer.components.bigdata"
          download-size="0"
@@ -190,8 +194,8 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
-    <plugin
+
+   <plugin
          id="org.talend.components.couchbase"
          download-size="0"
          install-size="0"
@@ -199,23 +203,10 @@
          unpack="false"/>
 
    <plugin
-         id="org.talend.help.couchbase"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-         
-    <plugin
          id="org.talend.components.marklogic.definition"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-      
-   <plugin
-         id="org.talend.help.marklogic"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+
 </feature>
