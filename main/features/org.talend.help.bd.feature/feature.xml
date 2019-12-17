@@ -22,10 +22,10 @@
    </url>
 
    <requires>
-      <import feature="org.talend.help.tos.components.feature" version="7.3.1.qualifier"/>
-      <import plugin="org.talend.help.couchbase"/>
-      <import plugin="org.talend.help.marklogic"/>
-      <import plugin="org.talend.help"/>
+      <import feature="org.talend.help.tos.components.feature" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.talend.help.couchbase" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.talend.help.marklogic" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.talend.help" version="0.0.0" match="greaterOrEqual"/>
    </requires>
 
 </feature>
