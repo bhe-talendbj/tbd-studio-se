@@ -22,10 +22,21 @@
    </url>
 
    <requires>
-      <import feature="org.talend.help.tos.components.feature" version="0.0.0" match="greaterOrEqual"/>
-      <import plugin="org.talend.help.couchbase" version="0.0.0" match="greaterOrEqual"/>
-      <import plugin="org.talend.help.marklogic" version="0.0.0" match="greaterOrEqual"/>
-      <import plugin="org.talend.help" version="0.0.0" match="greaterOrEqual"/>
+      <import feature="org.talend.help.di.feature" version="0.0.0" match="greaterOrEqual"/>
    </requires>
+
+   <plugin
+         id="org.talend.help.couchbase"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.talend.help.marklogic"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 
 </feature>
