@@ -265,16 +265,15 @@
 		</libraryNeeded>
 		<libraryNeeded
 			context="plugin:org.talend.hadoop.distribution.qubole"
-			id="cxf-rt-rs-client-3.2.4.jar"
-			name="cxf-rt-rs-client-3.2.4.jar"
-			mvn_uri="mvn:org.apache.cxf/cxf-rt-rs-client/3.2.4">
+			id="cxf-rt-rs-client-3.3.4.jar"
+			name="cxf-rt-rs-client-3.3.4.jar"
+			mvn_uri="mvn:org.apache.cxf/cxf-rt-rs-client/3.3.4">
 		</libraryNeeded>
         <libraryNeeded
             context="plugin:org.talend.libraries.apache.cxf"
-            id="cxf-bundle-jaxrs-2.7.18.jar"
-            name="cxf-bundle-jaxrs-2.7.18.jar"
-            mvn_uri="mvn:org.apache.cxf/cxf-bundle-jaxrs/2.7.18"
-            uripath="platform:/plugin/org.talend.libraries.apache.cxf/lib/cxf-bundle-jaxrs-2.7.18.jar">
+            id="cxf-bundle-jaxrs-3.3.4.jar"
+            name="cxf-bundle-jaxrs-3.3.4.jar"
+            mvn_uri="mvn:org.apache.cxf/cxf-bundle-jaxrs/3.3.4">            
 		</libraryNeeded>
 		<libraryNeeded
 			context="plugin:org.talend.hadoop.distribution.qubole"
