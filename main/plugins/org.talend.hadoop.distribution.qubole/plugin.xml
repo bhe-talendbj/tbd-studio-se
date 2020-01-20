@@ -273,7 +273,7 @@
             context="plugin:org.talend.libraries.apache.cxf"
             id="cxf-bundle-jaxrs-3.3.4.jar"
             name="cxf-bundle-jaxrs-3.3.4.jar"
-            mvn_uri="mvn:org.apache.cxf/cxf-bundle-jaxrs/3.3.4">            
+            mvn_uri="mvn:org.apache.cxf/cxf-bundle-jaxrs/3.3.4">
 		</libraryNeeded>
 		<libraryNeeded
 			context="plugin:org.talend.hadoop.distribution.qubole"

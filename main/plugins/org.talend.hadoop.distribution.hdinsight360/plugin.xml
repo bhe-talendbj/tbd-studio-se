@@ -20,7 +20,7 @@
             context="plugin:org.talend.hadoop.distribution.hdinsight360"
             id="cxf-rt-core-3.3.4.jar"
             name="cxf-rt-core-3.3.4.jar"
-            mvn_uri="mvn:org.apache.cxf/cxf-rt-core/3.3.4">            
+            mvn_uri="mvn:org.apache.cxf/cxf-rt-core/3.3.4">
         </libraryNeeded>
         <libraryNeeded
             context="plugin:org.talend.hadoop.distribution.hdinsight360"

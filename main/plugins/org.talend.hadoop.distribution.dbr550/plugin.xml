@@ -178,13 +178,13 @@
             uripath="platform:/plugin/org.talend.libraries.jackson/lib/jackson-core-2.6.7.jar">
         </libraryNeeded>
         <libraryNeeded
-            context="plugin:org.talend.libraries.apache.cxf"
+            context="plugin:org.talend.hadoop.distribution.dbr550"
             id="cxf-rt-rs-client-3.3.4.jar"
             name="cxf-rt-rs-client-3.3.4.jar"
             mvn_uri="mvn:org.apache.cxf/cxf-rt-rs-client/3.3.4">
         </libraryNeeded>
         <libraryNeeded
-            context="plugin:org.talend.libraries.apache.cxf"
+            context="plugin:org.talend.hadoop.distribution.dbr550"
             id="cxf-bundle-jaxrs-3.3.4.jar"
             name="cxf-bundle-jaxrs-3.3.4.jar"
             mvn_uri="mvn:org.apache.cxf/cxf-bundle-jaxrs/3.3.4">

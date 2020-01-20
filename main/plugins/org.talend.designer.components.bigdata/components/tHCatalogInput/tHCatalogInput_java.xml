@@ -439,7 +439,7 @@
 				MVN="mvn:org.apache.cxf/cxf-rt-bindings-xml/3.3.4"
 				REQUIRED="false" REQUIRED_IF="DISTRIBUTION!='CUSTOM'" />
 			<IMPORT NAME="cxf-rt-transports-http-3.3.4" MODULE="cxf-rt-transports-http-3.3.4.jar"
-				MVN="mvn:org.talend.libraries/cxf-rt-transports-http/3.3.4"
+				MVN="mvn:org.apache.cxf/cxf-rt-transports-http/3.3.4"
 				REQUIRED="false" REQUIRED_IF="DISTRIBUTION!='CUSTOM'" />
 		</IMPORTS>
 	</CODEGENERATION>
