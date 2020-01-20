@@ -509,7 +509,7 @@
 			<IMPORT NAME="cxf-rt-bindings-xml-3.3.4" MODULE="cxf-rt-bindings-xml-3.3.4.jar"
 				MVN="mvn:org.apache.cxf/cxf-rt-bindings-xml-3.3.4"				
 				REQUIRED="false" REQUIRED_IF="DISTRIBUTION!='CUSTOM'" />
-			<IMPORT NAME="cxf-rt-transports-http-2.7.7" MODULE="cxf-rt-transports-http-3.3.4.jar"
+			<IMPORT NAME="cxf-rt-transports-http-3.3.4" MODULE="cxf-rt-transports-http-3.3.4.jar"
 				MVN="mvn:org.apache.cxf/cxf-rt-transports-http-3.3.4"				
 				REQUIRED="false" REQUIRED_IF="DISTRIBUTION!='CUSTOM'" />
 			<IMPORT NAME="hadoop-conf-kerberos" MODULE="hadoop-conf-kerberos.jar"
