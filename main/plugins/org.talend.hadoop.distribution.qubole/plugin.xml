@@ -246,18 +246,6 @@
 		</libraryNeeded>
 		<libraryNeeded
 			context="plugin:org.talend.hadoop.distribution.qubole"
-			id="cxf-rt-rs-client-3.3.4.jar"
-			name="cxf-rt-rs-client-3.3.4.jar"
-			mvn_uri="mvn:org.apache.cxf/cxf-rt-rs-client/3.3.4">
-		</libraryNeeded>
-        <libraryNeeded
-            context="plugin:org.talend.libraries.apache.cxf"
-            id="cxf-bundle-jaxrs-3.3.4.jar"
-            name="cxf-bundle-jaxrs-3.3.4.jar"
-            mvn_uri="mvn:org.apache.cxf/cxf-bundle-jaxrs/3.3.4">
-		</libraryNeeded>
-		<libraryNeeded
-			context="plugin:org.talend.hadoop.distribution.qubole"
 			id="json-simple-1.1.jar"
 			name="json-simple-1.1.jar"
 			mvn_uri="mvn:com.googlecode.json-simple/json-simple/1.1">
