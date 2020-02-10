@@ -5,37 +5,6 @@
 
          <!-- hd insight common libraries -->
         <libraryNeeded
-            context="plugin:org.talend.hadoop.distribution.hdinsight360"
-            id="cxf-rt-bindings-xml-3.3.4.jar"
-            name="cxf-rt-bindings-xml-3.3.4.jar"
-            mvn_uri="mvn:org.apache.cxf/cxf-rt-bindings-xml/3.3.4">
-        </libraryNeeded>
-        <libraryNeeded
-            context="plugin:org.talend.hadoop.distribution.hdinsight360"
-            id="cxf-core-3.3.4.jar"
-            name="cxf-core-3.3.4.jar"
-            mvn_uri="mvn:org.apache.cxf/cxf-core/3.3.4">
-        </libraryNeeded>
-        <libraryNeeded
-            context="plugin:org.talend.hadoop.distribution.hdinsight360"
-            id="cxf-rt-frontend-jaxrs-3.3.4.jar"
-            name="cxf-rt-frontend-jaxrs-3.3.4.jar"
-            mvn_uri="mvn:org.apache.cxf/cxf-rt-frontend-jaxrs/3.3.4">
-        </libraryNeeded>
-        <libraryNeeded
-            context="plugin:org.talend.hadoop.distribution.hdinsight360"
-            id="cxf-rt-transports-http-3.3.4.jar"
-            name="cxf-rt-transports-http-3.3.4.jar"
-            mvn_uri="mvn:org.apache.cxf/cxf-rt-transports-http/3.3.4">
-        </libraryNeeded>
-        <libraryNeeded
-            context="plugin:org.talend.libraries.jackson"
-            id="json_simple-1.1.jar"
-            name="json_simple-1.1.jar"
-            mvn_uri="mvn:org.talend.libraries/json_simple-1.1/6.0.0"
-            uripath="platform:/plugin/org.talend.libraries.jackson/lib/json_simple-1.1.jar">
-        </libraryNeeded>
-        <libraryNeeded
             context=""
             id="javax.ws.rs-api-2.1-6.0.0.jar"
             name="javax.ws.rs-api-2.1-6.0.0.jar"
@@ -292,10 +261,6 @@
                 description="HD Insight common libraries"
                 id="HD_INSIGHT_36_COMMON_LIBRARIES"
                 name="HD_INSIGHT_36_COMMON_LIBRARIES">
-            <library id="cxf-rt-bindings-xml-3.3.4.jar" />
-            <library id="cxf-core-3.3.4.jar" />
-            <library id="cxf-rt-frontend-jaxrs-3.3.4.jar" />
-            <library id="cxf-rt-transports-http-3.3.4.jar" />
             <library id="json_simple-1.1.jar" />
             <library id="javax.ws.rs-api-2.1-6.0.0.jar" />
             <library id="wsdl4j-1.6.3.jar" />
